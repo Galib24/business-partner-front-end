@@ -1,0 +1,65 @@
+/* variable of color */
+:root{
+    --primary-color: #2457cf;
+    --secondary-color:#774e88;
+    --white-color:#ffffff;
+    --light-yellow: #efe991;
+    --dark-color: #000000;
+    --light-dark-blue:#587aa7;
+    --light-blue: #b4a5c7;
+    --dark-blue: #291958;
+    --green: #6fbf17;
+    --dark-light-blue: #2457cf;
+}
+
+@media(max-width:991px){
+    /* service tab */
+    .overview-left-img{
+        display: none;
+    }
+    .post-image-info{
+        display: none;
+    }
+    .service-reverse{
+        flex-direction: column-reverse;
+    }
+    .directory-adres {
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 10px;
+    }
+    .third-side{
+        flex-direction: column-reverse;
+    }
+    .tab-service-post h3{
+        margin-top: 20px;
+      }
+      .team-members{
+          padding-top: 0px;
+      }
+      .team-member-name {
+        padding-top: 25px;
+      }
+      .team-members-respo{
+          padding-top: 50px;
+      }
+
+      .news-tag-post a {
+        padding: 10px 18px;
+      }
+      .enter-post-add .media {
+        display: block;
+      }
+      .enter-post-add .media-body{
+          padding-top: 20px;
+      }
+      
+}
+@media(max-width:768px){
+    .invoice #description-table td {
+        font-size: 12px;
+        text-align: center;
+        border: 1px solid #eaeaea;
+    }
+}
+

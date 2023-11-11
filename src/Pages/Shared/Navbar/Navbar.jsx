@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { HiMenuAlt2 } from "react-icons/hi";
+import { FaRegUser } from "react-icons/fa";
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const toggleMenu = () => setMenuOpen(!menuOpen);
@@ -16,68 +18,65 @@ const Navbar = () => {
                         className="lg:flex items-center justify-between h-full lg:px-4 w-full">
                         <Link
                         >
-                            ga
+                            BusinessPost
 
                         </Link>
                         <div
-                            className="text-white hidden sm:flex">
-                            <ul className="hidden sm:flex text-black items-center">
-                                <li
+                            className='mr-12'>
+                            <ul className="hidden sm:flex text-black gap-1 items-center">
+                                <li>
 
-                                >
-                                    <Link
-
-                                        className="text-sm font-semibold cursor-pointer ease-out duration-300 hover:font-bold">
-                                        Home
-                                    </Link>
-                                </li>
-                                <li
-
-                                >
-                                    <Link
-
-                                        className="text-sm font-semibold cursor-pointer ease-out duration-300 hover:font-bold">
-                                        Find A Job
-                                    </Link>
-                                </li>
-                                <li
-
-                                >
-                                    <Link
-
-                                        className="text-sm font-semibold cursor-pointer ease-out duration-300 hover:font-bold">
-                                        Find A Seekers
-                                    </Link>
-                                </li>
-                                <li
-                                >
-                                    <Link
-
-                                        className="text-sm font-semibold cursor-pointer ease-out duration-300 hover:font-bold">
-                                        Blogs
-                                    </Link>
-                                </li>
-                                <li
-
-                                >
-                                    <Link
-
-                                        className="text-sm font-semibold cursor-pointer ease-out duration-300 hover:font-bold">
-                                        About
-                                    </Link>
-                                </li>
-
-
-
-
-
-
-
-                                {/* lg */}
-                                <li
-                                    className="flex items-center space-x-5 text-[#F68519]ml-10">
+                                    <div className="dropdown dropdown-bottom dropdown-end">
+                                        <label tabIndex={0} className="btn m-1">Buy a Business <MdOutlineKeyboardArrowDown></MdOutlineKeyboardArrowDown> </label>
+                                        
+                                        <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                                            <li><a>Search For Business</a></li>
+                                        </ul>
+                                    </div>
 
                                 </li>
+                                <li>
+                                    <div className="w-fit">
+                                        <select className="bg-transparent cursor-pointer">
+                                            <option>Buy a Franchise</option>
+                                            <option className='p-2 m-2'>Search For Business</option>
+
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="w-fit">
+                                        <select className="bg-transparent cursor-pointer">
+                                            <option>Sell a Business</option>
+                                            <option className='p-2 m-2'>Search For Business</option>
+
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="w-fit">
+                                        <select className="bg-transparent cursor-pointer">
+                                            <option>Business Brokers</option>
+                                            <option className='p-2 m-2'>Search For Business</option>
+
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="w-fit">
+                                        <select className="bg-transparent cursor-pointer">
+                                            <option>Franchisor</option>
+                                            <option className='p-2 m-2'>Search For Business</option>
+
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="w-fit">
+                                        <h2>Business Wanted</h2>
+                                    </div>
+                                </li>
+                                <li className='btn '><FaRegUser></FaRegUser>  My Business</li>
                             </ul>
                         </div>
 
