@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { HiMenuAlt2 } from "react-icons/hi";
 import { FaRegUser } from "react-icons/fa";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+'./Navbar.css'
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const toggleMenu = () => setMenuOpen(!menuOpen);
@@ -26,9 +27,9 @@ const Navbar = () => {
                             <ul className="hidden sm:flex text-black gap-1 items-center">
                                 <li>
 
-                                    <div className="dropdown dropdown-bottom dropdown-end">
-                                        <label tabIndex={0} className="btn m-1">Buy a Business <MdOutlineKeyboardArrowDown></MdOutlineKeyboardArrowDown> </label>
-                                        
+                                    <div className="dropdown   dropdown-bottom dropdown-end">
+                                        <label tabIndex={0} className="flex cursor-pointer  m-1">Buy a Business <MdOutlineKeyboardArrowDown className='mt-1 ml-5'></MdOutlineKeyboardArrowDown> </label>
+
                                         <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
                                             <li><a>Search For Business</a></li>
                                         </ul>
@@ -36,39 +37,50 @@ const Navbar = () => {
 
                                 </li>
                                 <li>
-                                    <div className="w-fit">
-                                        <select className="bg-transparent cursor-pointer">
-                                            <option>Buy a Franchise</option>
-                                            <option className='p-2 m-2'>Search For Business</option>
 
-                                        </select>
+                                    <div className="dropdown dropdown-bottom dropdown-end">
+                                        <label tabIndex={0} className="flex cursor-pointer  m-1">Buy a Franchise<MdOutlineKeyboardArrowDown className='mt-1 ml-5'></MdOutlineKeyboardArrowDown> </label>
+
+                                        <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                                            <li><a>Search For Franchise</a></li>
+                                        </ul>
                                     </div>
                                 </li>
                                 <li>
-                                    <div className="w-fit">
-                                        <select className="bg-transparent cursor-pointer">
-                                            <option>Sell a Business</option>
-                                            <option className='p-2 m-2'>Search For Business</option>
 
-                                        </select>
+                                <div className="dropdown dropdown-bottom dropdown-end">
+                                        <label tabIndex={0} className="flex cursor-pointer  m-1">Sell a Business<MdOutlineKeyboardArrowDown className='mt-1 ml-5'></MdOutlineKeyboardArrowDown> </label>
+
+                                        <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                                            <li><a>Sell For free</a></li>
+                                        </ul>
+                                    </div>
+
+                                </li>
+                                <li>
+
+
+
+                                <div className="dropdown dropdown-bottom dropdown-end">
+                                        <label tabIndex={0} className="flex cursor-pointer  m-1">Business Brokers<MdOutlineKeyboardArrowDown className='mt-1 ml-5'></MdOutlineKeyboardArrowDown> </label>
+
+                                        <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                                            <li><a>Brokers Directory</a></li>
+                                            <li><a>Business sales Promo</a></li>
+                                            <li><a>Brokers Directory Promo</a></li>
+                                        </ul>
                                     </div>
                                 </li>
                                 <li>
-                                    <div className="w-fit">
-                                        <select className="bg-transparent cursor-pointer">
-                                            <option>Business Brokers</option>
-                                            <option className='p-2 m-2'>Search For Business</option>
 
-                                        </select>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div className="w-fit">
-                                        <select className="bg-transparent cursor-pointer">
-                                            <option>Franchisor</option>
-                                            <option className='p-2 m-2'>Search For Business</option>
+                                <div className="dropdown dropdown-bottom dropdown-end">
+                                        <label tabIndex={0} className="flex cursor-pointer  m-1">Franchisor<MdOutlineKeyboardArrowDown className='mt-1 ml-5'></MdOutlineKeyboardArrowDown> </label>
 
-                                        </select>
+                                        <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                                            <li><a>Franchisors Directory</a></li>
+                                            <li><a>Franchisors Sales Promo</a></li>
+                                            <li><a>Franchisors Directory Promo</a></li>
+                                        </ul>
                                     </div>
                                 </li>
                                 <li>
@@ -76,7 +88,7 @@ const Navbar = () => {
                                         <h2>Business Wanted</h2>
                                     </div>
                                 </li>
-                                <li className='btn '><FaRegUser></FaRegUser>  My Business</li>
+                               
                             </ul>
                         </div>
 
