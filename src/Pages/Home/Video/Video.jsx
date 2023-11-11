@@ -8,7 +8,7 @@ const Video = () => {
             <video className='video' src={videoBg} autoPlay loop muted></video>
             <div className="overlay"></div>
             {/* input filed  */}
-            <div className='container mx-auto'>
+            {/* <div className='container mx-auto'>
                 <div
                     style={{ backgroundColor: 'rgba(255,255,255,.2)' }}
                     className="overflow-hidden    shadow-lg absolute top-48 ml-56  py-8 px-28 rounded-full mt-8 lg:mt-16">
@@ -42,7 +42,7 @@ const Video = () => {
 
 
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };
