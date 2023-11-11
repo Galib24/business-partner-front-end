@@ -9,11 +9,11 @@ const Navbar = () => {
     const toggleMenu = () => setMenuOpen(!menuOpen);
     return (
         <div
-            className="bg-gradient-to-r from-cyan-50 to-blue-100 w-full fixed z-30 top-0 py-1 lg:py-0">
+            className="bg-white w-full fixed z-30 top-0 py-1 lg:py-0">
             <header
                 className="container mx-auto">
                 <nav
-                    className="py-1 max-w-screen-3xl">
+                    className="py-1 navbar mx-auto max-w-screen-3xl">
                     {/* Desktop part */}
                     <div
                         className="lg:flex items-center justify-between h-full lg:px-4 w-full">
