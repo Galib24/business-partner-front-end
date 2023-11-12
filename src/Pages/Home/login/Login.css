@@ -1,0 +1,7 @@
+.youtube-player {
+    display: block;  /* Show the player */
+  }
+  
+  .youtube-player:not(.youtube-player--playing) {
+    display: none;  /* Hide the player initially */
+  }

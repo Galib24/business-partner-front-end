@@ -118,7 +118,7 @@ const Navbar = () => {
                                 <li>
                                     <div className='flex'>
                                         <img width={16} src={img3} alt="" />
-                                        <h2>My Watchlist</h2>
+                                        <Link to={'/login'}>My Watchlist</Link>
                                     </div>
                                 </li>
                                 <li>
