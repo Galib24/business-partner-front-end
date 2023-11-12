@@ -1,33 +1,64 @@
-*{
-    margin: 0;
-    padding: 0;
-    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  position: relative;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mathew {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.mathewMan {
+  background-color: aliceblue;
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 767px) {
+  .pack > div {
+      display: none;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+  .video2 {
+      display: block; /* Show the second video on small devices */
+      margin-top: 80px;
+  }
+
+  .video {
+      display: none; /* Hide the first video on small devices */
+  }
+}
+
+/* Media Query for Larger Devices */
+@media only screen and (min-width: 768px) {
+  .video {
+      display: block; /* Show the first video on larger devices */
+  }
+
+  .video2 {
+      display: none; /* Hide the second video on larger devices */
+  }
 }
 
 
-.main {
-    position: relative;
-  }
-  
-  .video {
-    width: 100%; /* Assuming you want the video to cover the entire container */
-    height: 100%;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value (0 to 1) for the desired opacity */
-  }
-  .mathew{
-    background-color: rgba(255,255,255,.2);
-    
-  }
-  .mathewMan{
-    background-color: aliceblue;
-  }
-
-  

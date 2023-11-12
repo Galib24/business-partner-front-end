@@ -1,11 +1,13 @@
 import React from 'react';
 import videoBg from '../../../assets/video/header-video1.mp4'
+import videoBg2 from '../../../assets/video/header-video2.mp4'
 import './Video.css'
 
 const Video = () => {
     return (
         <div className='main max-w-screen-3xl'>
             <video className='video' src={videoBg} autoPlay loop muted></video>
+            <video className='video2' src={videoBg2} autoPlay loop muted></video>
             <div className="overlay"></div>
             {/* input filed  */}
             {/* <div className='container mx-auto'>
