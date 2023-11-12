@@ -209,7 +209,7 @@ const Navbar = () => {
                         {/* mobile device menu */}
                         <div
                             className="flex-col  font-semibold text-gray-500">
-                            <ul className='absolute top-4 left-5'>
+                            <ul className='absolute top-4 left-4'>
                                 <li
                                     className="hover:underline">
                                     <Link

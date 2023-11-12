@@ -10,10 +10,13 @@ const Video = () => {
             <video className='video2' src={videoBg2} autoPlay loop muted></video>
             <div className="overlay"></div>
             {/* input filed  */}
-            {/* <div className='container mx-auto'>
+            <div className='container mx-auto'>
+            <h2 style={{fontSize: '28px'}} className='text-center overflow-hidden absolute top-40 left-80 ml-56   text-white'>Find Business Opportunities for Sale</h2>
+
+                
                 <div
                     style={{ backgroundColor: 'rgba(255,255,255,.2)' }}
-                    className="overflow-hidden    shadow-lg absolute top-48 ml-56  py-8 px-28 rounded-full mt-8 lg:mt-16">
+                    className="overflow-hidden    shadow-lg absolute top-36 ml-80  py-8 px-24 rounded-full mt-8 lg:mt-16">
                     <div className='flex   gap-3 '>
                         <div style={{ border: '1px solid #ced4da' }} className="w-fit bg-white cursor-pointer">
                             <select style={{ padding: '10px 8px' }} className="bg-transparent cursor-pointer">
@@ -37,14 +40,17 @@ const Video = () => {
                             </select>
                         </div>
                         <div className="bg-[#774e88] px-16 cursor-pointer">
-                            <h2 className='mt-2 text-white'>Search</h2>
+                            <h2 className='mt-2 text-white'>SEARCH</h2>
                         </div>
 
                     </div>
 
-
+                    <div className='absolute right-28  bottom-0'>
+                        <h2 className='text-white hover:text-[#0dcaf0] cursor-pointer ease-in-out duration-300'>Advance Search</h2>
+                    </div>
                 </div>
-            </div> */}
+
+            </div>
         </div>
     );
 };

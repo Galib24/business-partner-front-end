@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <>
             <div className='bg-neutral'>
-                <footer className="footer container p-10 px-40 mx-auto bg-neutral text-neutral-content">
+                <footer className="footer container p-10 px-40 mx-auto bg-[#291958] text-neutral-content">
                     <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-24'>
                         <ul>
                             <li className="footer-title">Services</li>
@@ -52,19 +52,27 @@ const Footer = () => {
 
                 </footer>
                 {/* second part */}
-                <div className='bg-red-500'>
-                    <div className='container mx-auto  flex flex-col md:flex-row justify-between bg-green-400 p-5 py-10 md:p-10'>
+                <div className='bg-[#774e88]'>
+                    <div className='container mx-auto  flex flex-col md:flex-row justify-between bg-[#774e88]  text-white'>
                         <div className='flex justify-center md:justify-start items-center md:items-start px-5 mb-4 md:mb-0'>
-                            <h2 className='text-2xl ml-24 text-red-500'>Do Business Where Business is Done</h2>
+                            <h2 className='text-2xl ml-36 mt-12'>Do Business Where Business is Done</h2>
+
                         </div>
-                        <div className='flex justify-center  items-center md:justify-end'>
-                            <button className='btn mr-32 bg-red-400'>Sell Your Business</button>
+
+                        <div className="w-1/2 relative right-0 bottom-0  h-36  py-20   bg-[#b4a5c7] translate-x-4 -skew-x-12 origin-left">
+                            <div className='flex absolute right-72 bottom-16   justify-center items-center md:justify-end'>
+                                <button  className='p-3 px-10 transform skew-x-12 bg-[#774e88]'>Sell Your Business</button>
+                            </div>
                         </div>
+
+
                     </div>
+
+
                 </div>
 
                 {/* third part */}
-                <footer className="footer  p-4 md:p-10 bg-base-200 text-base-content container mx-auto flex flex-col justify-between items-center">
+                <footer className="footer  p-4 md:p-10 bg-[#291958] text-white container mx-auto flex flex-col justify-between items-center">
                     <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 md:gap-20 lg:gap-28">
                         <ul className="mb-4">
                             <li className="footer-title">Services</li>
