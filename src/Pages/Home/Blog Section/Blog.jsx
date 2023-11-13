@@ -1,5 +1,6 @@
 import React from 'react';
 import image from '../../../assets/images/latest_news_page_1.jpg'
+import image5 from '../../../assets/images/latest_news_page_4.jpg'
 import image2 from '../../../assets/images/latest_news_small_1.jpg'
 import image3 from '../../../assets/images/latest_news_small_2.jpg'
 import image4 from '../../../assets/images/latest_news_small_3.jpg'
@@ -53,8 +54,25 @@ const Blog = () => {
                         </a>
 
 
-                        <h2 style={{ fontSize: '24px' }} className='mt-2'>Benefits of Our Outstanding Services</h2>
+                        <h2 style={{ fontSize: '24px' }} className='mt-5'>Benefits of Our Outstanding Services</h2>
 
+
+                        <div
+                            className="divider mb-4">
+
+                        </div>
+                        <div >
+                            <h2 style={{fontSize: '14px'}} className='text-[#3e3e3e]'>
+                            Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance, business orci ultrices venenatis mauris. It is a long established fact that a reader will be distracted.
+                            </h2>
+                            <h2 style={{fontSize: '14px'}} className='mt-2 text-[#3e3e3e]'>
+                            It is a long established fact that a reader will be distracted. Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance, business orci ultrices venenatis mauris. It is a long established fact that a reader will be distracted It is a long established fact. Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance, business orci ultrices venenatis mauris. It is a long established fact that a reader will be distracted.
+                            </h2>
+                        </div>
+                        <div className='grid grid-cols-2 gap-5 mt-8'>
+                            <img src={image} alt="" />
+                            <img src={image5} alt="" />
+                        </div>
                     </div>
 
                     {/* Right Part (Image) */}
