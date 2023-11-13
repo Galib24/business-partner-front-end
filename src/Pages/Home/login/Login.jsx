@@ -29,17 +29,17 @@ const Login = () => {
         event.target.pauseVideo();
     };
     return (
-        <div>
+        <div className='overflow-x-hidden overflow-clip'>
             {/* title part */}
-            <div className='p-24    w-full   bg-[#774e88]'>
+            <div className='p-24  container  mx-auto   bg-[#774e88]'>
                 <h2 style={{ fontSize: '26px' }} className='mt-10 ml-20 font-bold text-white'>My Business</h2>
-                <div className='hidden sm:block'>
+                <div className='hidden relative bottom-44 sm:block'>
                     <div className='flex justify-center items-center p-3 overflow-clip absolute top-56 right-28  lg:w-60 px-5 text-white  bg-[#291958]'>
                         <h2>Home </h2>
                         <h2>My business</h2>
                     </div>
                 </div>
-                <hr className='absolute left-0 top-64 mt-3 w-full' style={{ border: '3px solid #291958', borderRadius: '5px 5px 5px 5px', }} />
+                <hr className='absolute lg:block hidden left-0 top-64 mt-3 w-full' style={{ border: '3px solid #291958', borderRadius: '5px 5px 5px 5px', }} />
             </div>
 
             {/* form and video player  */}
@@ -47,7 +47,7 @@ const Login = () => {
            
 
                 <div className='absolute overflow-clip top-72 left-28'>
-                    <hr className='bg-red-400' style={{ border: '2px solid black' }} />
+                    <hr className='bg-red-400' style={{ border: '2px solid black', width: '100px' }} />
                     <div className='flex justify-center items-center'>
                         <h1 className='text-2xl'>Welcome, </h1>
                         <h2 className='text-2xl text-[#774e88]'>LOGIN/REGISTER</h2>
@@ -83,7 +83,7 @@ const Login = () => {
                                         <form
                                         >
                                             <div
-                                                className="flex items-center  rounded-none">
+                                                className="flex items-center mt-6  rounded-none">
 
                                                 <input
                                                     name="email"

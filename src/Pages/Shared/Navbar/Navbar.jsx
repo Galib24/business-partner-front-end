@@ -28,7 +28,7 @@ const Navbar = () => {
                         <Link className="hidden sm:block">
                             <img style={{ width: '150px' }} src={img1} alt="" />
                         </Link>
-                        <div>
+                        <div className='ml-16'>
                             <ul className="hidden sm:flex text-black items-center">
                                 <li>
 

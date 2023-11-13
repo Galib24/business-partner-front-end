@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -71,7 +72,7 @@ const Footer = () => {
                             <li className="footer-title">Entrepreneur Center</li>
                             <li className="link link-hover">Business Valuation</li>
                             <li className="link link-hover">Business Finance</li>
-                            <li className="link link-hover">Business Blog Posts</li>
+                            <li className="link link-hover"><Link to={'/blogs'}>Business Blog Posts</Link></li>
                         </ul>
                         <ul className="mb-4">
                             <li className="footer-title">Stay Connected</li>
