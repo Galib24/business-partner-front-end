@@ -1,7 +1,39 @@
 .youtube-player {
-    display: block;  /* Show the player */
+  display: block;
+  /* Show the player */
+}
+
+.youtube-player:not(.youtube-player--playing) {
+  display: none;
+  /* Hide the player initially */
+}
+
+
+.btn-style {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-style:hover {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.active {
+  background-color: #774e88;
+  color: #ffff;
+}
+/* @media only screen and (max-width: 767px) {
+  .tali1 {
+      display: block; 
+      margin-top: 80px;
   }
-  
-  .youtube-player:not(.youtube-player--playing) {
-    display: none;  /* Hide the player initially */
+
+  .tali2 {
+      display: none; 
   }
+} */

@@ -4,64 +4,18 @@ const Footer = () => {
     return (
         <>
             <div className='bg-neutral'>
-                <footer className="footer container p-10 px-40 mx-auto bg-[#291958] text-neutral-content">
-                    <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-24'>
-                        <ul>
-                            <li className="footer-title">Services</li>
-                            <li className="link link-hover">Branding</li>
-                            <li className="link link-hover">Design</li>
-                            <li className="link link-hover">Marketing</li>
-                            <li className="link link-hover">Advertisement</li>
-                        </ul>
-                        <ul>
-                            <li className="footer-title">Services</li>
-                            <li className="link link-hover">Branding</li>
-                            <li className="link link-hover">Design</li>
-                            <li className="link link-hover">Marketing</li>
-                            <li className="link link-hover">Advertisement</li>
-                        </ul>
-                        <ul>
-                            <li className="footer-title">Services</li>
-                            <li className="link link-hover">Branding</li>
-                            <li className="link link-hover">Design</li>
-                            <li className="link link-hover">Marketing</li>
-                            <li className="link link-hover">Advertisement</li>
-                        </ul>
-                        <ul>
-                            <li className="footer-title">Services</li>
-                            <li className="link link-hover">Branding</li>
-                            <li className="link link-hover">Design</li>
-                            <li className="link link-hover">Marketing</li>
-                            <li className="link link-hover">Advertisement</li>
-                        </ul>
-                        <ul>
-                            <li className="footer-title">Services</li>
-                            <li className="link link-hover">Branding</li>
-                            <li className="link link-hover">Design</li>
-                            <li className="link link-hover">Marketing</li>
-                            <li className="link link-hover">Advertisement</li>
-                        </ul>
-                        <ul>
-                            <li className="footer-title">Services</li>
-                            <li className="link link-hover">Branding</li>
-                            <li className="link link-hover">Design</li>
-                            <li className="link link-hover">Marketing</li>
-                            <li className="link link-hover">Advertisement</li>
-                        </ul>
-                    </div>
 
-                </footer>
                 {/* second part */}
-                <div className='bg-[#774e88]'>
-                    <div className='container mx-auto  flex flex-col md:flex-row justify-between bg-[#774e88]  text-white'>
+                <div className='bg-[#774e88] overflow-hidden'>
+                    <div className='container mx-auto overflow-hidden flex flex-col md:flex-row justify-between bg-[#774e88]  text-white'>
                         <div className='flex justify-center md:justify-start items-center md:items-start px-5 mb-4 md:mb-0'>
                             <h2 className='text-2xl ml-36 mt-12'>Do Business Where Business is Done</h2>
 
                         </div>
 
-                        <div className="w-1/2 relative right-0 bottom-0  h-36  py-20   bg-[#b4a5c7] translate-x-4 -skew-x-12 origin-left">
+                        <div className="w-1/2 relative right-0 bottom-0 hidden sm:block h-36  py-20   bg-[#b4a5c7] translate-x-4 -skew-x-12 origin-left">
                             <div className='flex absolute right-72 bottom-16   justify-center items-center md:justify-end'>
-                                <button  className='p-3 px-10 transform skew-x-12 bg-[#774e88]'>Sell Your Business</button>
+                                <button className='p-3 px-10 transform skew-x-12 bg-[#774e88]'>Sell Your Business</button>
                             </div>
                         </div>
 
@@ -72,53 +26,64 @@ const Footer = () => {
                 </div>
 
                 {/* third part */}
-                <footer className="footer  p-4 md:p-10 bg-[#291958] text-white container mx-auto flex flex-col justify-between items-center">
-                    <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 md:gap-20 lg:gap-28">
-                        <ul className="mb-4">
-                            <li className="footer-title">Services</li>
-                            <li className="link link-hover">Branding</li>
-                            <li className="link link-hover">Design</li>
-                            <li className="link link-hover">Marketing</li>
-                            <li className="link link-hover">Advertisement</li>
+                <footer className="footer p-4 md:p-10 bg-[#291958] text-white container mx-auto flex flex-col justify-between items-center max-h-screen overflow-y-auto">
+                    <div style={{fontSize: '14px'}} className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 md:gap-10 lg:gap-10">
+                        <ul  className="mb-4">
+                            <li className="footer-title">Company</li>
+                            <li className="link link-hover">About Us</li>
+                            <li className="link link-hover">Gallery</li>
+                            <li className="link link-hover">Contact Us</li>
+                            <li className="link link-hover">Terms of Services</li>
+                            <li className="link link-hover">Privacy Policy</li>
+                            <li className="link link-hover">Site Map</li>
+                            <li className="link link-hover">FAQ</li>
                         </ul>
                         <ul className="mb-4">
-                            <li className="footer-title">Services</li>
-                            <li className="link link-hover">Branding</li>
-                            <li className="link link-hover">Design</li>
-                            <li className="link link-hover">Marketing</li>
-                            <li className="link link-hover">Advertisement</li>
+                            <li className="footer-title">Business Search</li>
+                            <li className="link link-hover">Business Opportunities</li>
+                            <li className="link link-hover">Franchise Opportunities</li>
+                            <li className="link link-hover">Partnership Opportunities</li>
+                            <li className="link link-hover">Innovation Opportunities</li>
+                            <li className="link link-hover">Internet Opportunities</li>
+                            <li className="link link-hover">Migration Opportunities</li>
                         </ul>
                         <ul className="mb-4">
-                            <li className="footer-title">Services</li>
-                            <li className="link link-hover">Branding</li>
-                            <li className="link link-hover">Design</li>
-                            <li className="link link-hover">Marketing</li>
-                            <li className="link link-hover">Advertisement</li>
+                            <li className="footer-title">Advertise</li>
+                            <li className="link link-hover">Advertise for Free</li>
+                            <li className="link link-hover">Business Sales</li>
+                            <li className="link link-hover">Franchise Sales</li>
+                            <li className="link link-hover">Partnership Sales</li>
+                            <li className="link link-hover">Innovation Sales</li>
+                            <li className="link link-hover">Websites Sales</li>
+                            <li className="link link-hover">Business Migration</li>
                         </ul>
                         <ul className="mb-4">
-                            <li className="footer-title">Services</li>
-                            <li className="link link-hover">Branding</li>
-                            <li className="link link-hover">Design</li>
-                            <li className="link link-hover">Marketing</li>
-                            <li className="link link-hover">Advertisement</li>
+                            <li className="footer-title">Marketplace</li>
+                            <li className="link link-hover">Business Market
+</li>
+                            <li className="link link-hover">Business National</li>
+                            <li className="link link-hover">BInvest</li>
+                            <li className="link link-hover">Immigration Post</li>
+                            <li className="link link-hover">Franchise Post</li>
+                            <li className="link link-hover">Biz search</li>
                         </ul>
                         <ul className="mb-4">
-                            <li className="footer-title">Services</li>
-                            <li className="link link-hover">Branding</li>
-                            <li className="link link-hover">Design</li>
-                            <li className="link link-hover">Marketing</li>
-                            <li className="link link-hover">Advertisement</li>
+                            <li className="footer-title">Entrepreneur Center</li>
+                            <li className="link link-hover">Business Valuation</li>
+                            <li className="link link-hover">Business Finance</li>
+                            <li className="link link-hover">Business Blog Posts</li>
                         </ul>
                         <ul className="mb-4">
-                            <li className="footer-title">Services</li>
-                            <li className="link link-hover">Branding</li>
-                            <li className="link link-hover">Design</li>
-                            <li className="link link-hover">Marketing</li>
-                            <li className="link link-hover">Advertisement</li>
+                            <li className="footer-title">Stay Connected</li>
+                            <li className="link link-hover">Facebook</li>
+                            <li className="link link-hover">Linkedin</li>
+                            <li className="link link-hover">Instagram</li>
+                            <li className="link link-hover">Pinterest</li>
+                            <li className="link link-hover">Youtube</li>
                         </ul>
                     </div>
                     {/* search input */}
-                    <form className="w-full  md:w-1/4 mb-4 md:mb-0 lg:mx-auto md:ml-44">
+                    <form className="w-full text-black  md:w-1/4 mb-4 md:mb-0 lg:mx-auto md:ml-44">
                         <fieldset className="form-control container">
                             <div className="relative">
                                 <input

@@ -10,7 +10,7 @@ const Video = () => {
             <video className='video2' src={videoBg2} autoPlay loop muted></video>
             <div className="overlay"></div>
             {/* input filed  */}
-            <div className='container mx-auto'>
+            <div className='container  mx-auto'>
             <h2 style={{fontSize: '28px'}} className='text-center overflow-hidden absolute top-40 left-80 ml-56   text-white'>Find Business Opportunities for Sale</h2>
 
                 

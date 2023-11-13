@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
 import YouTube from 'react-youtube';
+import image1 from './../../../assets/images/recaptcha.png'
+import { TfiFacebook } from 'react-icons/tfi';
 import './Login.css'
 
 import { BiLinkExternal } from "react-icons/bi";
 import { Link } from 'react-router-dom';
 const Login = () => {
+
     const [selectedContent, setSelectedContent] = useState('overview');
 
     const handleContentClick = (content) => {
         setSelectedContent(content);
+        // Add your logic or state updates as needed
     };
 
     // youtube function
@@ -25,31 +29,50 @@ const Login = () => {
         event.target.pauseVideo();
     };
     return (
-        <>
+        <div>
             {/* title part */}
-            <div className='p-24  bg bg-red-400'>
+            <div className='p-24    w-full   bg-[#774e88]'>
                 <h2 style={{ fontSize: '26px' }} className='mt-10 ml-20 font-bold text-white'>My Business</h2>
-                <div className='flex justify-center items-center p-3 overflow-clip absolute top-56 right-28  w-60 px-5 text-white bg-[#291958]'>
-                    <h2>Home </h2>
-                    <h2>My business</h2>
+                <div className='hidden sm:block'>
+                    <div className='flex justify-center items-center p-3 overflow-clip absolute top-56 right-28  lg:w-60 px-5 text-white  bg-[#291958]'>
+                        <h2>Home </h2>
+                        <h2>My business</h2>
+                    </div>
                 </div>
                 <hr className='absolute left-0 top-64 mt-3 w-full' style={{ border: '3px solid #291958', borderRadius: '5px 5px 5px 5px', }} />
             </div>
 
             {/* form and video player  */}
-            <>
+            <div>
+           
 
-
-                <div className='grid grid-cols-2 mt-5 container mx-auto'>
-                    <div>
+                <div className='absolute overflow-clip top-72 left-28'>
+                    <hr className='bg-red-400' style={{ border: '2px solid black' }} />
+                    <div className='flex justify-center items-center'>
+                        <h1 className='text-2xl'>Welcome, </h1>
+                        <h2 className='text-2xl text-[#774e88]'>LOGIN/REGISTER</h2>
+                    </div>
+                </div>
+                <div className='grid  lg:grid-cols-12 lg:w-fit mt-5 container m-10 p-10 mx-auto '>
+                    <div className='col-span-6'>
                         <div
                             className="px-4">
-                            <div>
-                                <button onClick={() => handleContentClick('overview')} className='btn'>
-                                    Login
+                            <div className="flex  w-full">
+                                <button
+                                    style={{ border: '2px solid #774e88', borderRadius: '10px  0 0 10px' }}
+                                    onClick={() => handleContentClick('overview')}
+                                    className={`flex-1 py-2 px-4 border  text-[#774e88] bg-white focus:outline-none ${selectedContent === 'overview' ? 'active' : ''
+                                        }`}
+                                >
+                                    <span className="btm-nav-label">Login</span>
                                 </button>
-                                <button onClick={() => handleContentClick('businessActivity')} className='btn'>
-                                    Register
+                                <button
+                                    style={{ border: '2px solid #774e88', borderRadius: '0  10px 10px 0' }}
+                                    onClick={() => handleContentClick('businessActivity')}
+                                    className={`flex-1 py-2 px-4 border text-[#774e88] bg-white focus:outline-none ${selectedContent === 'businessActivity' ? 'active' : ''
+                                        }`}
+                                >
+                                    <span className="btm-nav-label">Register</span>
                                 </button>
                             </div>
 
@@ -103,12 +126,9 @@ const Login = () => {
                                                     </button>
                                                 </label>
                                             </div>
-
-                                            <div>
-                                                <input
-                                                    className="ease-out duration-300 btn bg-[#40e1f9] w-[100%] md:w-[25%] text-white text-center relative bottom-4 rounded-lg hover:bg-transparent hover:text-[#40e1f9] hover:font-extrabold hover:border-y-2 hover:border-x-2 hover:border-[#40e1f9]"
-                                                    type="submit"
-                                                    value="Login" />
+                                            <img className='w-2/6' src={image1} alt="" />
+                                            <div className='mt-10 flex justify-center '>
+                                                <button className='btn bg-[#774e88] text-white hover:bg-[#0d6efd] ease-in-out duration-200 items-center'>Login</button>
                                             </div>
 
                                         </form>
@@ -119,7 +139,7 @@ const Login = () => {
                                             {/* divider */}
                                             <div
                                                 className="divider mb-4">
-                                                Or
+                                                OR
                                             </div>
 
 
@@ -132,13 +152,105 @@ const Login = () => {
 
                                 {selectedContent === 'businessActivity' && (
                                     <>
-                                        <Link to={'/overview'}>Overview</Link>
-                                        <h1>My Profile</h1>
-                                        <h1>My Business Profile</h1>
-                                        <h1>Business Profile <br /> questioner</h1>
-                                        <h1>Photo Gallery</h1>
-                                        <h1>Video Gallery</h1>
-                                        <h1>Upload Center</h1>
+                                        <form
+                                        >
+                                            <div
+                                                className="flex items-center mt-6 rounded-none">
+
+                                                <input
+                                                    name="FirstName"
+                                                    type="text"
+                                                    placeholder="First Name"
+
+                                                    className="py-4 px-2 w-full font-semibold rounded-lg outline-none focus:border-transparent focus:ring-0"
+                                                    required />
+                                            </div>
+                                            <div
+                                                className="flex items-center my-9  rounded-none">
+
+                                                <input
+                                                    name="LastName"
+                                                    type="text"
+                                                    placeholder="Last Name"
+
+                                                    className="py-4 px-2 w-full font-semibold rounded-lg outline-none focus:border-transparent focus:ring-0"
+                                                    required />
+                                            </div>
+                                            <div
+                                                className="flex items-center  rounded-none">
+
+                                                <input
+                                                    name="email"
+                                                    type="email"
+                                                    placeholder="Enter Email"
+
+                                                    className="py-4 px-2 w-full  font-semibold rounded-lg outline-none focus:border-transparent focus:ring-0"
+                                                    required />
+                                            </div>
+
+                                            <div
+                                                className="mt-10 flex items-center rounded-none">
+
+                                                <input
+                                                    name="password"
+                                                    type='password'
+                                                    placeholder="Enter Password"
+                                                    className="py-4 px-2 w-full font-semibold rounded-lg outline-none focus:border-transparent focus:ring-0"
+                                                    required />
+                                            </div>
+                                            <div
+                                                className="mt-10 flex items-center rounded-none">
+
+                                                <input
+                                                    name="ConfirmPassword"
+                                                    type='password'
+                                                    placeholder="Confirm Password"
+                                                    className="py-4 px-2 w-full font-semibold rounded-lg outline-none focus:border-transparent focus:ring-0"
+                                                    required />
+                                            </div>
+
+                                            <div className="mb-4 mt-6 flex items-center">
+                                                <input
+                                                    type="checkbox"
+                                                    id="rememberMe"
+                                                    name="rememberMe"
+                                                    className="form-checkbox h-5 w-5 text-blue-500"
+                                                />
+                                                <label htmlFor="rememberMe" className="ml-2 text-gray-600">
+                                                    I have read and agree the business market term
+                                                </label>
+                                            </div>
+
+
+                                            <div className="mb-4 flex items-center">
+                                                <input
+                                                    type="checkbox"
+                                                    id="rememberMe"
+                                                    name="rememberMe"
+                                                    className="form-checkbox h-5 w-5 text-blue-500"
+                                                />
+                                                <label htmlFor="rememberMe" className="ml-2 text-gray-600">
+                                                    Remember me
+                                                </label>
+                                            </div>
+
+                                            <img className='w-2/6' src={image1} alt="" />
+                                            <div className='mt-10 flex justify-center '>
+                                                <button className='btn bg-[#774e88] text-white hover:bg-[#0d6efd] ease-in-out duration-200 items-center'>Register</button>
+                                            </div>
+
+                                            {/* divider */}
+                                            <div
+                                                className="divider mb-4">
+                                                OR
+                                            </div>
+
+                                            <div className='flex justify-center '>
+                                                <div className='bg-[#3B5998] text-white p-6'>
+                                                    <TfiFacebook></TfiFacebook>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </>
                                 )}
 
@@ -149,19 +261,21 @@ const Login = () => {
 
                         </div>
                     </div>
-                    <div>
+                    <div className='col-span-6'>
                         <YouTube
                             videoId="zLCcLmm-0_U"  // Replace with your actual video ID
                             opts={opts}
                             onReady={onReady}
+                            className='ml-5'
                         />
                     </div>
                 </div>
 
 
 
-            </>
-        </>
+
+            </div>
+        </div>
     );
 };
 
