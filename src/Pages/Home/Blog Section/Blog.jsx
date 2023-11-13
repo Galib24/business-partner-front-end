@@ -5,6 +5,7 @@ import image3 from '../../../assets/images/latest_news_small_2.jpg'
 import image4 from '../../../assets/images/latest_news_small_3.jpg'
 import classNames from 'classnames';
 import { IoMdSearch } from 'react-icons/io';
+import { FaRegCommentDots } from 'react-icons/fa';
 // IoMdSearch
 const Blog = () => {
     return (
@@ -41,8 +42,19 @@ const Blog = () => {
                                 </div>
                             </div>
                         </div>
-                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Your Text Heading</h1>
-                        <p className="text-base md:text-lg">Your text content goes here. You can add as much text as needed to convey your message.</p>
+                        <div style={{ fontSize: '14px' }} className='flex justify-between mt-7 text=[#5a5a5a]'>
+                            <h2>By Johny Bravo</h2>
+                            <h2>Category: Business, Industry</h2>
+                        </div>
+
+                        <a className='flex cursor-pointer mt-4'>
+                            <FaRegCommentDots className='mt-1 mr-1'></FaRegCommentDots>
+                            <h2>No Comments</h2>
+                        </a>
+
+
+                        <h2 style={{ fontSize: '24px' }} className='mt-2'>Benefits of Our Outstanding Services</h2>
+
                     </div>
 
                     {/* Right Part (Image) */}
@@ -64,48 +76,48 @@ const Blog = () => {
                         </form>
                         {/* lates part */}
                         <div>
-                            <h2 style={{fontSize: '28px'}} className='mt-4 mb-6'>Latest Post</h2>
+                            <h2 style={{ fontSize: '28px' }} className='mt-4 mb-6'>Latest Post</h2>
                             <div className='flex gap-4'>
                                 <img width={100} src={image2} alt="" />
                                 <div>
-                                    <h1 style={{fontSize: '14px'}} className='mt-1 text-[#3e3e3e]'>November 21, 2017</h1>
-                                    <h1 style={{fontSize: '18px'}} className='mt-3 font-sans'>Cras sit amet nibh libero, in gravida nulla..</h1>
+                                    <h1 style={{ fontSize: '14px' }} className='mt-1 text-[#3e3e3e]'>November 21, 2017</h1>
+                                    <h1 style={{ fontSize: '18px' }} className='mt-3 font-sans'>Cras sit amet nibh libero, in gravida nulla..</h1>
                                 </div>
                             </div>
 
                             <div
                                 className="divider mb-4">
-                            
+
                             </div>
                         </div>
                         <div>
-                            <h2 style={{fontSize: '28px'}} className='mt-4 mb-6'>Latest Post</h2>
+                            <h2 style={{ fontSize: '28px' }} className='mt-4 mb-6'>Latest Post</h2>
                             <div className='flex gap-4'>
                                 <img width={100} src={image3} alt="" />
                                 <div>
-                                    <h1 style={{fontSize: '14px'}} className='mt-1 text-[#3e3e3e]'>November 21, 2017</h1>
-                                    <h1 style={{fontSize: '18px'}} className='mt-3 font-sans'>Cras sit amet nibh libero, in gravida nulla..</h1>
+                                    <h1 style={{ fontSize: '14px' }} className='mt-1 text-[#3e3e3e]'>November 21, 2017</h1>
+                                    <h1 style={{ fontSize: '18px' }} className='mt-3 font-sans'>Cras sit amet nibh libero, in gravida nulla..</h1>
                                 </div>
                             </div>
 
                             <div
                                 className="divider mb-4">
-                            
+
                             </div>
                         </div>
                         <div>
-                            <h2 style={{fontSize: '28px'}} className='mt-4 mb-6'>Latest Post</h2>
+                            <h2 style={{ fontSize: '28px' }} className='mt-4 mb-6'>Latest Post</h2>
                             <div className='flex gap-4'>
                                 <img width={100} src={image4} alt="" />
                                 <div>
-                                    <h1 style={{fontSize: '14px'}} className='mt-1 text-[#3e3e3e]'>November 21, 2017</h1>
-                                    <h1 style={{fontSize: '18px'}} className='mt-3 font-sans'>Cras sit amet nibh libero, in gravida nulla..</h1>
+                                    <h1 style={{ fontSize: '14px' }} className='mt-1 text-[#3e3e3e]'>November 21, 2017</h1>
+                                    <h1 style={{ fontSize: '18px' }} className='mt-3 font-sans'>Cras sit amet nibh libero, in gravida nulla..</h1>
                                 </div>
                             </div>
 
                             <div
                                 className="divider mb-4">
-                            
+
                             </div>
                         </div>
                     </div>
