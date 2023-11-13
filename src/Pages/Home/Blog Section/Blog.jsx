@@ -1,12 +1,16 @@
 import React from 'react';
 import image from '../../../assets/images/latest_news_page_1.jpg'
-import image5 from '../../../assets/images/latest_news_page_4.jpg'
 import image2 from '../../../assets/images/latest_news_small_1.jpg'
 import image3 from '../../../assets/images/latest_news_small_2.jpg'
 import image4 from '../../../assets/images/latest_news_small_3.jpg'
+import image5 from '../../../assets/images/latest_news_page_4.jpg'
+import image6 from '../../../assets/images/add.jpg'
+import image7 from '../../../assets/images/post.png'
 import classNames from 'classnames';
 import { IoMdSearch } from 'react-icons/io';
 import { FaRegCommentDots } from 'react-icons/fa';
+import { FaArrowRight } from 'react-icons/fa';
+
 // IoMdSearch
 const Blog = () => {
     return (
@@ -62,17 +66,102 @@ const Blog = () => {
 
                         </div>
                         <div >
-                            <h2 style={{fontSize: '14px'}} className='text-[#3e3e3e]'>
-                            Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance, business orci ultrices venenatis mauris. It is a long established fact that a reader will be distracted.
+                            <h2 style={{ fontSize: '14px' }} className='text-[#3e3e3e]'>
+                                Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance, business orci ultrices venenatis mauris. It is a long established fact that a reader will be distracted.
                             </h2>
-                            <h2 style={{fontSize: '14px'}} className='mt-2 text-[#3e3e3e]'>
-                            It is a long established fact that a reader will be distracted. Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance, business orci ultrices venenatis mauris. It is a long established fact that a reader will be distracted It is a long established fact. Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance, business orci ultrices venenatis mauris. It is a long established fact that a reader will be distracted.
+                            <h2 style={{ fontSize: '14px' }} className='mt-2 text-[#3e3e3e]'>
+                                It is a long established fact that a reader will be distracted. Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance, business orci ultrices venenatis mauris. It is a long established fact that a reader will be distracted It is a long established fact. Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance, business orci ultrices venenatis mauris. It is a long established fact that a reader will be distracted.
                             </h2>
                         </div>
-                        <div className='grid grid-cols-2 gap-5 mt-8'>
+                        <div className='grid sm:grid-cols-1 lg:grid-cols-2 gap-5 mt-8'>
                             <img src={image} alt="" />
                             <img src={image5} alt="" />
                         </div>
+
+                        <div>
+                            <h2 className='mt-11 mb-10'>It is a long established fact that a reader will be distracted. Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance, business orci ultrices venenatis mauris. It is a long established fact that a reader will be distracted.</h2>
+                            <h2 className='mb-10'>Copious is WP Aliquam ultrices venenatis mauris. Vestibulum ante ipsum primis in that faucibus orci luctus et.</h2>
+                            <ul>
+
+
+                                <li className='mt-5 mb-5'> 1) Benenatis mauris industry, logistics, finance, business orci ultrices venenatis</li>
+                                <li className='mb-5'>2) Benenatis mauris industry, logistics, finance, business orci ultrices venenatis</li>
+                                <li className='mb-5'>3) Benenatis mauris industry</li>
+                                <li className='mb-5'>4) The point of using Lorem Ipsum is that it has a more-or-less normal</li>
+                                <li className='mb-5'>5)
+                                    Various versions have evolved over the years, sometimes by accident, sometimes on purpose.</li>
+                                <li className='mb-11'>6)
+                                    Curabitur pellentesque massa eu. Quisque volutpat pharetra felis, lorem molestie vitae.</li>
+                            </ul>
+                            <p className='mb-11'>It is a long established fact that a reader will be distracted. Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance, business orci ultrices venenatis mauris. It is a long established fact that a reader will be distracted It is a long established fact. Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance, business orci ultrices venenatis mauris. It is a long established fact that a reader will be distracted.</p>
+                            <h2 className='mt-11'>Share this Post!</h2>
+                            <div
+                                className="divider mb-4">
+
+                            </div>
+                            <img src={image6} alt="" />
+                        </div>
+                        {/* card part */}
+                        <div className='flex w-full h-72 mt-14 gap-4 p-10  bg-[#edf3f8]'>
+                            <img style={{ width: '300px' }} className=' ml-2' src={image7} alt="" />
+                            <div>
+                                <h2 className='text-2xl'>Steven Brodward</h2>
+                                <h2 style={{ fontSize: '14px' }} className='mt-2 mb-2'>Senior Web Designer</h2>
+                                <p style={{ fontSize: '14px' }}>It is a long established fact that a reader will be distracted. Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance, business orci ultrices venenatis maurisIt is a long established fact that a reader will be distracted. Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance, business orci ultrices venenat.</p>
+                            </div>
+                        </div>
+                        <div className='flex w-full h-72 mt-14 gap-4 p-10   bg-[#edf3f8]'>
+                            <img className='w-36 h-24 ml-2' src={image7} alt="" />
+                            <div>
+                                <h2 className='text-2xl'>Steven Brodward</h2>
+                                <h2 style={{ fontSize: '14px' }} className='mt-2 mb-2'>Senior Web Designer</h2>
+                                <p style={{ fontSize: '14px' }}>It is a long established fact that a reader will be distracted. Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance, business orci ultrices venenatis maurisIt is a long established fact that a reader will be distracted. Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance, business orci ultrices venenat.</p>
+                            </div>
+                        </div>
+                        <div className='flex w-full h-72 mt-14 gap-4 p-10   bg-[#edf3f8]'>
+                            <img className='w-36 h-24 ml-2' src={image7} alt="" />
+                            <div>
+                                <h2 className='text-2xl'>Steven Brodward</h2>
+                                <h2 style={{ fontSize: '14px' }} className='mt-2 mb-2'>Senior Web Designer</h2>
+                                <p style={{ fontSize: '14px' }}>It is a long established fact that a reader will be distracted. Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance, business orci ultrices venenatis maurisIt is a long established fact that a reader will be distracted. Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance, business orci ultrices venenat.</p>
+                            </div>
+                        </div>
+                        <div className='flex w-full h-72 mt-14 gap-4 p-10   bg-[#edf3f8]'>
+                            <img className='w-36 h-24 ml-2' src={image7} alt="" />
+                            <div>
+                                <h2 className='text-2xl'>Steven Brodward</h2>
+                                <h2 style={{ fontSize: '14px' }} className='mt-2 mb-2'>Senior Web Designer</h2>
+                                <p style={{ fontSize: '14px' }}>It is a long established fact that a reader will be distracted. Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance, business orci ultrices venenatis maurisIt is a long established fact that a reader will be distracted. Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance, business orci ultrices venenat.</p>
+                            </div>
+
+                        </div>
+                        <h2 className='text-2xl my-8'>Leave a Reply</h2>
+                        {/* reply part */}
+                        <div>
+                            <div className='grid sm:grid-cols-1 lg:grid-cols-2 gap-5 mt-10'>
+                                <div className="">
+                                    <input type="text" placeholder="Your Name" className="input w-full h-14 bg-white input-bordered" required />
+                                </div>
+                                <div className="">
+                                    <input type="text" placeholder="Email address" className="input w-full h-14  bg-white input-bordered" required />
+                                </div>
+                                <div className="">
+                                    <input type="number" placeholder="Phone Number" className="input w-full  h-14 bg-white input-bordered" required />
+                                </div>
+                                <div className="">
+                                    <input type="text" placeholder="Subject" className="input w-full h-14  bg-white input-bordered" required />
+                                </div>
+                            </div>
+                            <div className='mt-5'>
+                                <textarea
+                                    className="p-16 px-4 w-full border rounded-md"
+                                    placeholder="Comments"
+                                ></textarea>
+
+                                <button className='p-3 rounded-md px-5 bg-[#4f287b] text-white mt-8 '>Submit</button>
+                            </div>
+                        </div>
+
                     </div>
 
                     {/* Right Part (Image) */}
@@ -136,6 +225,60 @@ const Blog = () => {
                             <div
                                 className="divider mb-4">
 
+                            </div>
+                            {/* categories */}
+                            <div className='w-full'>
+                                <h2 className='text-3xl mt-5 mb-10'>Categories</h2>
+                                <div className='flex mb-5'>
+                                    <FaArrowRight className='mt-1 mr-2'></FaArrowRight> <h2>Chemical Research</h2>
+                                </div>
+                                <div className='flex mb-5'>
+                                    <FaArrowRight className='mt-1 mr-2'></FaArrowRight> <h2>Construction</h2>
+                                </div>
+                                <div className='flex mb-5'>
+                                    <FaArrowRight className='mt-1 mr-2'></FaArrowRight> <h2>Finance</h2>
+                                </div>
+                                <div className='flex mb-5'>
+                                    <FaArrowRight className='mt-1 mr-2'></FaArrowRight> <h2>Material Engineering</h2>
+                                </div>
+                                <div className='flex mb-5'>
+                                    <FaArrowRight className='mt-1 mr-2'></FaArrowRight> <h2>Petroleum And Gas</h2>
+                                </div>
+                                <div className='flex mb-5'>
+                                    <FaArrowRight className='mt-1 mr-2'></FaArrowRight> <h2>Power And Energy</h2>
+                                </div>
+
+                            </div>
+
+                            {/* card */}
+                            <div className="card w-full bg-[#4f287b] text-white">
+                                <div className="card-body">
+                                    <h2 className="card-title">You Have Question?</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas reiciendis, praesl illo est laudantium eligenaliquid.</p>
+                                    <div className="card-actions justify-start">
+                                        <button className="bg-white text-black px-7 py-3 mt-2 rounded-md">Read More</button>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* popular tag */}
+                            <div className='mt-5'>
+                                <h2 className='text-3xl mb-2'>Popular Tags</h2>
+                                <div className='flex gap-1'>
+                                    <button className='btn bg-white'>Blog</button>
+                                    <button className='btn bg-white'>Construction</button>
+                                    <button className='btn bg-white'>Wordpress Themes</button>
+                                </div>
+                                <div className='flex gap-1'>
+                                    <button className='btn bg-white'>Indusrty</button>
+                                    <button className='btn bg-white'>Gas</button>
+                                    <button className='btn bg-white'>Power</button>
+                                    <button className='btn bg-white'>Transport</button>
+                                </div>
+                                <div className='flex gap-1'>
+                                    <button className='btn bg-white'>Blog</button>
+                                    <button className='btn bg-white'>Construction</button>
+                                    <button className='btn bg-white'>Wordpress Themes</button>
+                                </div>
                             </div>
                         </div>
                     </div>
