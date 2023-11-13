@@ -198,7 +198,7 @@ const Blog = () => {
                             </div>
                         </div>
                         <div>
-                            <h2 style={{ fontSize: '28px' }} className='mt-4 mb-6'>Latest Post</h2>
+                            
                             <div className='flex gap-4'>
                                 <img width={100} src={image3} alt="" />
                                 <div>
@@ -213,7 +213,7 @@ const Blog = () => {
                             </div>
                         </div>
                         <div>
-                            <h2 style={{ fontSize: '28px' }} className='mt-4 mb-6'>Latest Post</h2>
+                         
                             <div className='flex gap-4'>
                                 <img width={100} src={image4} alt="" />
                                 <div>
