@@ -14,8 +14,10 @@ import img4 from '../../../assets/images/result-page-img.jpg'
 
 const BusinessList = () => {
 
+
     return (
         <>
+
             {/* title */}
             <div className='p-24  container  mx-auto   bg-[#774e88]'>
                 <h2 style={{ fontSize: '26px' }} className='mt-10 ml-20 font-bold text-white'>Business Listings</h2>
@@ -31,7 +33,6 @@ const BusinessList = () => {
             {/* separate  part */}
             <div className="bg-white container mx-auto flex items-center justify-center">
                 <div className="container lg:ml-20 mx-auto gap-5 p-4 md:p-8 flex flex-col md:flex-row">
-
 
                     {/* Left Part (Text) */}
                     <div className="md:w-2/3 md:pr-8">
@@ -58,101 +59,191 @@ const BusinessList = () => {
                                 <CiStar></CiStar>
                             </div>
                         </div>
-                        <div className='md:w-full mt-3 flex items-center justify-center'>
-                            <Swiper
-                                
-                                slidesPerView={1}
-                                autoplay={{
-                                    delay: 2500,
-                                    disableOnInteraction: true,
-                                }}
-                                modules={[Autoplay, Pagination, Navigation]}
-                                className="mySwiper"
+                        <div className='p-2' style={{ border: '1px solid gray' }}>
+                            <div className='md:w-full  flex items-center justify-center'>
+                                <Swiper
+
+                                    slidesPerView={1}
+                                    autoplay={{
+                                        delay: 2500,
+                                        disableOnInteraction: true,
+                                    }}
+                                    modules={[Autoplay, Pagination, Navigation]}
+                                    className="mySwiper"
 
 
-                            >
+                                >
 
 
-                                <SwiperSlide>
+                                    <SwiperSlide>
 
-                                    <div className='relative  w-full'>
-                                        <img className='w-full' src={img1} alt="" />
-                                        <div className='curve-container'>
-                                            <h2 className='flex justify-center items-center text-white'>BUSINESS FOR SALE</h2>
+                                        <div className='relative  w-full'>
+                                            <img className='w-full' src={img1} alt="" />
+                                            <div className='curve-container'>
+                                                <h2 className='flex justify-center items-center text-white'>BUSINESS FOR SALE</h2>
+                                            </div>
+                                            <div className='bg-[#1396e2] text-white p-2 w-14 absolute top-0 right-5 '>
+                                                <h2 className='flex justify-center items-center'>QLD</h2>
+                                            </div>
                                         </div>
-                                        <div className='bg-[#1396e2] text-white p-2 w-14 absolute top-0 right-5 '>
-                                            <h2 className='flex justify-center items-center'>QLD</h2>
+
+
+
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className='relative   w-full'>
+                                            <img className='w-full' src={img1} alt="" />
+                                            <div className='curve-container'>
+                                                <h2 className='flex justify-center items-center text-white'>BUSINESS FOR SALE</h2>
+                                            </div>
+                                            <div className='bg-[#1396e2] text-white p-2 w-14 absolute top-0 right-5 '>
+                                                <h2 className='flex justify-center items-center'>QLD</h2>
+                                            </div>
                                         </div>
+
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className='relative  w-full'>
+                                            <img className='w-full' src={img1} alt="" />
+                                            <div className='curve-container'>
+                                                <h2 className='flex justify-center items-center text-white'>BUSINESS FOR SALE</h2>
+                                            </div>
+                                            <div className='bg-[#1396e2] text-white p-2 w-14 absolute top-0 right-5 '>
+                                                <h2 className='flex justify-center items-center'>QLD</h2>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className='relative   w-full'>
+                                            <img className='w-full' src={img1} alt="" />
+                                            <div className='curve-container'>
+                                                <h2 className='flex justify-center items-center text-white'>BUSINESS FOR SALE</h2>
+                                            </div>
+                                            <div className='bg-[#1396e2] text-white p-2 w-14 absolute top-0 right-5 '>
+                                                <h2 className='flex justify-center items-center'>QLD</h2>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+
+                                </Swiper>
+                                <div className='ml-40'>
+                                    <div className='flex justify-between'>
+                                        <h2>BUSINESS CONTENT</h2>
+                                        <h2>$1,849</h2>
+                                    </div>
+                                    <div
+                                        className="divider mb-4">
+                                    </div>
+                                    <p className='text-[#5a5a5a]'>Traditional Country Style 8 Drawer Coffee Table Good Condition. Just dont have the room for it at Ormeau Call Peter, so this product really best for you Garden Dining Sets, Garden Sofa Sets, Garden Corner Sofas</p>
+                                    <div
+                                        className="divider mb-4">
+                                    </div>
+                                    <div className='grid grid-cols-3 gap-5'>
+                                        <button onClick={() =>
+                                            document.getElementById("my_modal_7").showModal()} className=' bg-[#5CB85C] text-white py-2'>Contact Seller</button>
+                                        <button className=' bg-[#4f287b]  text-white py-3'>View biz Profile</button>
+                                        <button className=' bg-[#2457cf] text-white py-2'>Submit Offer</button>
                                     </div>
 
-
-
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className='relative   w-full'>
-                                        <img className='w-full' src={img1} alt="" />
-                                        <div className='curve-container'>
-                                            <h2 className='flex justify-center items-center text-white'>BUSINESS FOR SALE</h2>
-                                        </div>
-                                        <div className='bg-[#1396e2] text-white p-2 w-14 absolute top-0 right-5 '>
-                                            <h2 className='flex justify-center items-center'>QLD</h2>
-                                        </div>
-                                    </div>
-
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className='relative  w-full'>
-                                        <img className='w-full' src={img1} alt="" />
-                                        <div className='curve-container'>
-                                            <h2 className='flex justify-center items-center text-white'>BUSINESS FOR SALE</h2>
-                                        </div>
-                                        <div className='bg-[#1396e2] text-white p-2 w-14 absolute top-0 right-5 '>
-                                            <h2 className='flex justify-center items-center'>QLD</h2>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className='relative   w-full'>
-                                        <img className='w-full' src={img1} alt="" />
-                                        <div className='curve-container'>
-                                            <h2 className='flex justify-center items-center text-white'>BUSINESS FOR SALE</h2>
-                                        </div>
-                                        <div className='bg-[#1396e2] text-white p-2 w-14 absolute top-0 right-5 '>
-                                            <h2 className='flex justify-center items-center'>QLD</h2>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-
-                            </Swiper>
-                            <div className='ml-40'>
-                                <div className='flex justify-between'>
-                                <h2>BUSINESS CONTENT</h2>
-                                <h2>$1,849</h2>
                                 </div>
-                                <div
-                                    className="divider mb-4">
-                                </div>
-                                <p>Traditional Country Style 8 Drawer Coffee Table Good Condition. Just dont have the room for it at Ormeau Call Peter, so this product really best for you Garden Dining Sets, Garden Sofa Sets, Garden Corner Sofas</p>
-                                <div
-                                    className="divider mb-4">
-                                </div>
-                                <div className='grid grid-cols-3 gap-4'>
-                                    <button className='btn'>Contact Seller</button>
-                                    <button className='btn'>View biz Profile</button>
-                                    <button className='btn'>Submit Offer</button>
-                                </div>
-
                             </div>
                         </div>
 
 
 
-                        {/* <div className='grid grid-cols-2  bg-red-500 p-5 gap-4'>
-                    
+                        {/* modal */}
                         <div>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem est sequi adipisci sit earum ab! Ipsum, nisi cupiditate animi esse quae fuga quos, nam molestiae, commodi repellendus quibusdam eligendi adipisci.
+                            <dialog id="my_modal_7" className="modal">
+                                <div className="modal-box w-96 bg-[#f3f3f3]">
+                                    {/* <form method="dialog">
+                                      
+                                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                                            ✕
+                                        </button>
+                                    </form> */}
+                                    {/* text editor */}
+                                    <h2 className=" text-lg text-[#6c757d] font-semibold my-2">
+                                        Contact the Seller
+                                    </h2>
+                                    <div
+                                        className="divider mb-4">
+
+                                    </div>
+                                    <div>
+
+                                    </div>
+
+                                    {/* react hook form for getting data */}
+                                    <form className=''>
+                                        {/* Blog Title Field */}
+                                        <div className="form-control my-4">
+                                            <input
+                                                type="text"
+                                                placeholder="Name"
+
+                                                className="w-full input input-bordered uppercase"
+                                            />
+                                        </div>
+                                        <div className="form-control mb-4">
+
+                                            <input
+                                                type="text"
+                                                placeholder="Email"
+
+                                                className="w-full input input-bordered uppercase"
+                                            />
+                                        </div>
+                                        <div className="form-control mb-4">
+
+                                            <input
+                                                type="text"
+                                                placeholder="Subject"
+
+                                                className="w-full input input-bordered uppercase"
+                                            />
+                                        </div>
+                                        <div className="form-control mb-4">
+
+                                            <input
+                                                type="number"
+                                                placeholder="Phone"
+
+                                                className="w-full input input-bordered uppercase"
+                                            />
+                                        </div>
+
+
+
+
+                                        <div className="form-control flex flex-col mt-2">
+
+                                            <textarea
+                                                id=""
+                                                cols="30"
+                                                rows="4"
+                                                placeholder="Blog Description"
+
+                                                className="textarea textarea-bordered textarea-md w-full "
+                                            ></textarea>
+                                        </div>
+
+
+                                        <div className="text-center my-5">
+                                            <form method="dialog">
+                                                <input
+                                                    className="bg-[#774e88] w-full py-1 text-white hover:bg-[#0d6efd] cursor-pointer ease-out duration-300"
+                                                    type="submit"
+                                                    value="Send a Message"
+                                                />
+                                            </form>
+
+                                            <h2>Phone Number: 0290030333</h2>
+                                        </div>
+                                    </form>
+                                </div>
+                            </dialog>
                         </div>
-                       </div> */}
+
 
 
 
@@ -161,6 +252,7 @@ const BusinessList = () => {
 
                     {/* Right Part (Image) */}
                     <div className="md:w-1/3 mt-4 md:mt-0">
+
 
                         <ReactSlider
                             className="horizontal-slider"
