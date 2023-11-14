@@ -32,7 +32,7 @@ const Footer = () => {
                         <ul className="mb-4">
                             <li className="footer-title">Company</li>
                             <li className="link link-hover">About Us</li>
-                            <li className="link link-hover">Gallery</li>
+                            <li className="link link-hover"><Link to={'/gallery'}>Gallery</Link></li>
                             <li className="link link-hover">Contact Us</li>
                             <li className="link link-hover">Terms of Services</li>
                             <li className="link link-hover">Privacy Policy</li>
