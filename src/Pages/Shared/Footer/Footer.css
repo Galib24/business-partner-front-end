@@ -1,0 +1,8 @@
+@media only screen and (max-width: 767px) {
+    .man2 {
+        display: block; /* Show the second video on small devices */
+       
+    }
+  
+    
+  }

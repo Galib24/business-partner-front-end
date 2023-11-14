@@ -14,11 +14,14 @@ const Footer = () => {
 
                         </div>
 
-                        <div className="w-1/2 relative right-0 bottom-0 hidden sm:block h-36  py-20   bg-[#b4a5c7] translate-x-4 -skew-x-12 origin-left">
+                        <div className="w-1/2 relative right-0 bottom-0  hidden sm:block h-36  py-20   bg-[#b4a5c7] translate-x-4 -skew-x-12 origin-left">
                             <div className='flex absolute right-72 bottom-16   justify-center items-center md:justify-end'>
                                 <button className='p-3 px-10 transform skew-x-12 bg-[#774e88]'>Sell Your Business</button>
                             </div>
                         </div>
+
+                        
+                     
 
 
                     </div>
@@ -33,7 +36,7 @@ const Footer = () => {
                             <li className="footer-title">Company</li>
                             <li className="link link-hover">About Us</li>
                             <li className="link link-hover"><Link to={'/gallery'}>Gallery</Link></li>
-                            <li className="link link-hover">Contact Us</li>
+                            <li className="link link-hover" ><Link to={'/contactPost'}>Contact Us</Link></li>
                             <li className="link link-hover">Terms of Services</li>
                             <li className="link link-hover">Privacy Policy</li>
                             <li className="link link-hover">Site Map</li>

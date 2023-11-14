@@ -182,7 +182,7 @@ const Navbar = () => {
 
                     {/* dashboard for small device interface */}
                     <div
-                        className={`fixed top-20 left-0 w-[60%] sm:hidden h-screen bg-indigo-50 p-10  transition-transform duration-500 ease-in-out ${menuOpen ? 'transform translate-x-0' : 'transform -translate-x-full'
+                        className={`fixed top-20 left-0 w-[60%] sm:hidden h-screen bg-[#774e88] p-10  transition-transform duration-500 ease-in-out ${menuOpen ? 'transform translate-x-0' : 'transform -translate-x-full'
                             }`}
                     >
                         {/* cross sine */}
@@ -208,7 +208,7 @@ const Navbar = () => {
 
                         {/* mobile device menu */}
                         <div
-                            className="flex-col  font-semibold text-gray-500">
+                            className="flex-col  font-semibold bg-[#774e88]  text-white">
                             <ul className='absolute top-4 left-4'>
                                 <li
                                     className="hover:underline">
