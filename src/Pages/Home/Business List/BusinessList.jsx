@@ -39,17 +39,218 @@ const BusinessList = () => {
                         <div className='grid grid-cols-2 mb-5'>
                             <div style={{ border: '1px solid black' }} className="w-fit mathewMan">
                                 <select style={{ padding: '10px 8px' }} className="w-fit bg-white cursor-pointer">
-                                    <option>Location</option>
-                                    <option>Business For Sale</option>
+                                    <option>Price Low to High</option>
+                                    <option>Price High to Low</option>
+                                    <option>Listing Date</option>
 
                                 </select>
                             </div>
                             <div style={{ border: '1px solid black' }} className="w-fit mathewMan">
                                 <select style={{ padding: '10px 8px' }} className="w-fit bg-white cursor-pointer">
-                                    <option>Location</option>
-                                    <option>Business For Sale</option>
+                                    <option>Please Select industry</option>
+                                    <option>Agriculture/Primary</option>
+                                    <option>Engineering</option>
+                                    <option>Hospitality</option>
+                                    <option>Manufacturing</option>
+                                    <option>Retail</option>
+                                    <option>Service</option>
+                                    <option>Transport/Distribution</option>
 
                                 </select>
+                            </div>
+                        </div>
+                        <div className='flex justify-between bg-[#4f287b] text-white p-2'>
+                            <h2>Outdor Italian Desk - 100% Wood material</h2>
+                            <div className='flex justify-center items-center'>
+                                <h2>Saved</h2>
+                                <CiStar></CiStar>
+                            </div>
+                        </div>
+                        <div className='p-2 mb-5' style={{ border: '1px solid gray' }}>
+                            <div className='md:w-full  flex items-center justify-center'>
+                                <Swiper
+
+                                    slidesPerView={1}
+                                    autoplay={{
+                                        delay: 2500,
+                                        disableOnInteraction: true,
+                                    }}
+                                    modules={[Autoplay, Pagination, Navigation]}
+                                    className="mySwiper"
+
+
+                                >
+
+
+                                    <SwiperSlide>
+
+                                        <div className='relative  w-full'>
+                                            <img className='w-full' src={img1} alt="" />
+                                            <div className='curve-container'>
+                                                <h2 className='flex justify-center items-center text-white'>BUSINESS FOR SALE</h2>
+                                            </div>
+                                            <div className='bg-[#1396e2] text-white p-2 w-14 absolute top-0 right-5 '>
+                                                <h2 className='flex justify-center items-center'>QLD</h2>
+                                            </div>
+                                        </div>
+
+
+
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className='relative   w-full'>
+                                            <img className='w-full' src={img1} alt="" />
+                                            <div className='curve-container'>
+                                                <h2 className='flex justify-center items-center text-white'>BUSINESS FOR SALE</h2>
+                                            </div>
+                                            <div className='bg-[#1396e2] text-white p-2 w-14 absolute top-0 right-5 '>
+                                                <h2 className='flex justify-center items-center'>QLD</h2>
+                                            </div>
+                                        </div>
+
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className='relative  w-full'>
+                                            <img className='w-full' src={img1} alt="" />
+                                            <div className='curve-container'>
+                                                <h2 className='flex justify-center items-center text-white'>BUSINESS FOR SALE</h2>
+                                            </div>
+                                            <div className='bg-[#1396e2] text-white p-2 w-14 absolute top-0 right-5 '>
+                                                <h2 className='flex justify-center items-center'>QLD</h2>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className='relative   w-full'>
+                                            <img className='w-full' src={img1} alt="" />
+                                            <div className='curve-container'>
+                                                <h2 className='flex justify-center items-center text-white'>BUSINESS FOR SALE</h2>
+                                            </div>
+                                            <div className='bg-[#1396e2] text-white p-2 w-14 absolute top-0 right-5 '>
+                                                <h2 className='flex justify-center items-center'>QLD</h2>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+
+                                </Swiper>
+                                <div className='ml-40'>
+                                    <div className='flex justify-between'>
+                                        <h2>BUSINESS CONTENT</h2>
+                                        <h2>$1,849</h2>
+                                    </div>
+                                    <div
+                                        className="divider mb-4">
+                                    </div>
+                                    <p className='text-[#5a5a5a]'>Traditional Country Style 8 Drawer Coffee Table Good Condition. Just dont have the room for it at Ormeau Call Peter, so this product really best for you Garden Dining Sets, Garden Sofa Sets, Garden Corner Sofas</p>
+                                    <div
+                                        className="divider mb-4">
+                                    </div>
+                                    <div className='grid grid-cols-3 gap-5'>
+                                        <button onClick={() =>
+                                            document.getElementById("my_modal_7").showModal()} className=' bg-[#5CB85C] text-white py-2'>Contact Seller</button>
+                                        <button className=' bg-[#4f287b]  text-white py-3'>View biz Profile</button>
+                                        <button onClick={() =>
+                                            document.getElementById("my_modal_7").showModal()} className=' bg-[#2457cf] text-white py-2'>Submit Offer</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div className='flex justify-between bg-[#4f287b] text-white p-2'>
+                            <h2>Outdor Italian Desk - 100% Wood material</h2>
+                            <div className='flex justify-center items-center'>
+                                <h2>Saved</h2>
+                                <CiStar></CiStar>
+                            </div>
+                        </div>
+                        <div className='p-2 mb-5' style={{ border: '1px solid gray' }}>
+                            <div className='md:w-full  flex items-center justify-center'>
+                                <Swiper
+
+                                    slidesPerView={1}
+                                    autoplay={{
+                                        delay: 2500,
+                                        disableOnInteraction: true,
+                                    }}
+                                    modules={[Autoplay, Pagination, Navigation]}
+                                    className="mySwiper"
+
+
+                                >
+
+
+                                    <SwiperSlide>
+
+                                        <div className='relative  w-full'>
+                                            <img className='w-full' src={img1} alt="" />
+                                            <div className='curve-container'>
+                                                <h2 className='flex justify-center items-center text-white'>BUSINESS FOR SALE</h2>
+                                            </div>
+                                            <div className='bg-[#1396e2] text-white p-2 w-14 absolute top-0 right-5 '>
+                                                <h2 className='flex justify-center items-center'>QLD</h2>
+                                            </div>
+                                        </div>
+
+
+
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className='relative   w-full'>
+                                            <img className='w-full' src={img1} alt="" />
+                                            <div className='curve-container'>
+                                                <h2 className='flex justify-center items-center text-white'>BUSINESS FOR SALE</h2>
+                                            </div>
+                                            <div className='bg-[#1396e2] text-white p-2 w-14 absolute top-0 right-5 '>
+                                                <h2 className='flex justify-center items-center'>QLD</h2>
+                                            </div>
+                                        </div>
+
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className='relative  w-full'>
+                                            <img className='w-full' src={img1} alt="" />
+                                            <div className='curve-container'>
+                                                <h2 className='flex justify-center items-center text-white'>BUSINESS FOR SALE</h2>
+                                            </div>
+                                            <div className='bg-[#1396e2] text-white p-2 w-14 absolute top-0 right-5 '>
+                                                <h2 className='flex justify-center items-center'>QLD</h2>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className='relative   w-full'>
+                                            <img className='w-full' src={img1} alt="" />
+                                            <div className='curve-container'>
+                                                <h2 className='flex justify-center items-center text-white'>BUSINESS FOR SALE</h2>
+                                            </div>
+                                            <div className='bg-[#1396e2] text-white p-2 w-14 absolute top-0 right-5 '>
+                                                <h2 className='flex justify-center items-center'>QLD</h2>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+
+                                </Swiper>
+                                <div className='ml-40'>
+                                    <div className='flex justify-between'>
+                                        <h2>BUSINESS CONTENT</h2>
+                                        <h2>$1,849</h2>
+                                    </div>
+                                    <div
+                                        className="divider mb-4">
+                                    </div>
+                                    <p className='text-[#5a5a5a]'>Traditional Country Style 8 Drawer Coffee Table Good Condition. Just dont have the room for it at Ormeau Call Peter, so this product really best for you Garden Dining Sets, Garden Sofa Sets, Garden Corner Sofas</p>
+                                    <div
+                                        className="divider mb-4">
+                                    </div>
+                                    <div className='grid grid-cols-3 gap-5'>
+                                        <button onClick={() =>
+                                            document.getElementById("my_modal_7").showModal()} className=' bg-[#5CB85C] text-white py-2'>Contact Seller</button>
+                                        <button className=' bg-[#4f287b]  text-white py-3'>View biz Profile</button>
+                                        <button onClick={() =>
+                                            document.getElementById("my_modal_7").showModal()} className=' bg-[#2457cf] text-white py-2'>Submit Offer</button>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                         <div className='flex justify-between bg-[#4f287b] text-white p-2'>
@@ -142,7 +343,105 @@ const BusinessList = () => {
                                         <button onClick={() =>
                                             document.getElementById("my_modal_7").showModal()} className=' bg-[#5CB85C] text-white py-2'>Contact Seller</button>
                                         <button className=' bg-[#4f287b]  text-white py-3'>View biz Profile</button>
-                                        <button className=' bg-[#2457cf] text-white py-2'>Submit Offer</button>
+                                        <button onClick={() =>
+                                            document.getElementById("my_modal_7").showModal()} className=' bg-[#2457cf] text-white py-2'>Submit Offer</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div className='flex justify-between bg-[#4f287b] text-white p-2'>
+                            <h2>Outdor Italian Desk - 100% Wood material</h2>
+                            <div className='flex justify-center items-center'>
+                                <h2>Saved</h2>
+                                <CiStar></CiStar>
+                            </div>
+                        </div>
+                        <div className='p-2' style={{ border: '1px solid gray' }}>
+                            <div className='md:w-full  flex items-center justify-center'>
+                                <Swiper
+
+                                    slidesPerView={1}
+                                    autoplay={{
+                                        delay: 2500,
+                                        disableOnInteraction: true,
+                                    }}
+                                    modules={[Autoplay, Pagination, Navigation]}
+                                    className="mySwiper"
+
+
+                                >
+
+
+                                    <SwiperSlide>
+
+                                        <div className='relative  w-full'>
+                                            <img className='w-full' src={img1} alt="" />
+                                            <div className='curve-container'>
+                                                <h2 className='flex justify-center items-center text-white'>BUSINESS FOR SALE</h2>
+                                            </div>
+                                            <div className='bg-[#1396e2] text-white p-2 w-14 absolute top-0 right-5 '>
+                                                <h2 className='flex justify-center items-center'>QLD</h2>
+                                            </div>
+                                        </div>
+
+
+
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className='relative   w-full'>
+                                            <img className='w-full' src={img1} alt="" />
+                                            <div className='curve-container'>
+                                                <h2 className='flex justify-center items-center text-white'>BUSINESS FOR SALE</h2>
+                                            </div>
+                                            <div className='bg-[#1396e2] text-white p-2 w-14 absolute top-0 right-5 '>
+                                                <h2 className='flex justify-center items-center'>QLD</h2>
+                                            </div>
+                                        </div>
+
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className='relative  w-full'>
+                                            <img className='w-full' src={img1} alt="" />
+                                            <div className='curve-container'>
+                                                <h2 className='flex justify-center items-center text-white'>BUSINESS FOR SALE</h2>
+                                            </div>
+                                            <div className='bg-[#1396e2] text-white p-2 w-14 absolute top-0 right-5 '>
+                                                <h2 className='flex justify-center items-center'>QLD</h2>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className='relative   w-full'>
+                                            <img className='w-full' src={img1} alt="" />
+                                            <div className='curve-container'>
+                                                <h2 className='flex justify-center items-center text-white'>BUSINESS FOR SALE</h2>
+                                            </div>
+                                            <div className='bg-[#1396e2] text-white p-2 w-14 absolute top-0 right-5 '>
+                                                <h2 className='flex justify-center items-center'>QLD</h2>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+
+                                </Swiper>
+                                <div className='ml-40'>
+                                    <div className='flex justify-between'>
+                                        <h2>BUSINESS CONTENT</h2>
+                                        <h2>$1,849</h2>
+                                    </div>
+                                    <div
+                                        className="divider mb-4">
+                                    </div>
+                                    <p className='text-[#5a5a5a]'>Traditional Country Style 8 Drawer Coffee Table Good Condition. Just dont have the room for it at Ormeau Call Peter, so this product really best for you Garden Dining Sets, Garden Sofa Sets, Garden Corner Sofas</p>
+                                    <div
+                                        className="divider mb-4">
+                                    </div>
+                                    <div className='grid grid-cols-3 gap-5'>
+                                        <button onClick={() =>
+                                            document.getElementById("my_modal_7").showModal()} className=' bg-[#5CB85C] text-white py-2'>Contact Seller</button>
+                                        <button className=' bg-[#4f287b]  text-white py-3'>View biz Profile</button>
+                                        <button onClick={() =>
+                                            document.getElementById("my_modal_7").showModal()} className=' bg-[#2457cf] text-white py-2'>Submit Offer</button>
                                     </div>
 
                                 </div>
