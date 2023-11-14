@@ -28,8 +28,8 @@ const Footer = () => {
 
                 {/* third part */}
                 <footer className="footer p-4 md:p-10 bg-[#291958] text-white container mx-auto flex flex-col justify-between items-center max-h-screen overflow-y-auto">
-                    <div style={{fontSize: '14px'}} className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 md:gap-10 lg:gap-10">
-                        <ul  className="mb-4">
+                    <div style={{ fontSize: '14px' }} className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 md:gap-10 lg:gap-10">
+                        <ul className="mb-4">
                             <li className="footer-title">Company</li>
                             <li className="link link-hover">About Us</li>
                             <li className="link link-hover">Gallery</li>
@@ -42,7 +42,7 @@ const Footer = () => {
                         <ul className="mb-4">
                             <li className="footer-title">Business Search</li>
                             <li className="link link-hover">Business Opportunities</li>
-                            <li className="link link-hover">Franchise Opportunities</li>
+                            <li className="link link-hover"><Link to={'/businessList'}>Franchise Opportunities</Link></li>
                             <li className="link link-hover">Partnership Opportunities</li>
                             <li className="link link-hover">Innovation Opportunities</li>
                             <li className="link link-hover">Internet Opportunities</li>
@@ -61,7 +61,7 @@ const Footer = () => {
                         <ul className="mb-4">
                             <li className="footer-title">Marketplace</li>
                             <li className="link link-hover">Business Market
-</li>
+                            </li>
                             <li className="link link-hover">Business National</li>
                             <li className="link link-hover">BInvest</li>
                             <li className="link link-hover">Immigration Post</li>

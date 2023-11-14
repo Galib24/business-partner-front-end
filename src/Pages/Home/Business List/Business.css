@@ -1,0 +1,59 @@
+.horizontal-slider {
+  width: 80%;
+  max-width: 500px;
+  height: 30px;
+  border: none; /* Remove the border from the range bar */
+  background-color: lightgray; /* Set the background color for the range bar */
+  border-radius: 15px; /* Set the border-radius for rounded corners */
+  overflow: hidden;
+}
+
+.horizontal-slider .example-track {
+  top: 10px;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.example-track.example-track-0 {
+  background-color: green;
+}
+
+.example-track.example-track-1 {
+  background-color: gray;
+}
+
+.horizontal-slider .example-thumb {
+  top: 1px;
+  width: 30px;
+  height: 30px; /* Equal width and height to create a circular shape */
+  line-height: 18px;
+  text-align: center;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  border: none; /* Remove the border from the handle */
+  box-sizing: border-box;
+  border-radius: 50%; /* Set border-radius to 50% for a circular shape */
+  /* display: none; */
+}
+
+.container {
+    position: relative;
+  }
+  
+  
+  
+  .curve-container {
+    background-color: #ff0303; /* Red color */
+    padding: 1px;
+    width: 170px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(45px) skewY(-20deg) rotate(-13deg);
+  }
+  
+  .curve-container h2 {
+    margin: 0;
+  }
+  
