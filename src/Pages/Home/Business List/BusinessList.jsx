@@ -11,8 +11,20 @@ import img1 from '../../../assets/images/result-page-img.jpg'
 import img2 from '../../../assets/images/result-page-img.jpg'
 import img3 from '../../../assets/images/result-page-img.jpg'
 import img4 from '../../../assets/images/result-page-img.jpg'
+import img5 from '../../../assets/images/baner.jpg'
 
 const BusinessList = () => {
+    const [minValue, setMinValue] = useState(0);
+    const [maxValue, setMaxValue] = useState(100);
+
+    const handleRangeChange = (e) => {
+        setMinValue(e.target.value);
+        setMaxValue(e.target.max - e.target.value);
+    };
+
+
+
+
 
 
     return (
@@ -36,7 +48,7 @@ const BusinessList = () => {
 
                     {/* Left Part (Text) */}
                     <div className="md:w-2/3 md:pr-8">
-                        <div className='grid grid-cols-2 mb-5'>
+                        <div className='grid lg:grid-cols-2 sm:grid-cols-1 mb-5'>
                             <div style={{ border: '1px solid black' }} className="w-fit mathewMan">
                                 <select style={{ padding: '10px 8px' }} className="w-fit bg-white cursor-pointer">
                                     <option>Price Low to High</option>
@@ -67,7 +79,7 @@ const BusinessList = () => {
                             </div>
                         </div>
                         <div className='p-2 mb-5' style={{ border: '1px solid gray' }}>
-                            <div className='md:w-full  flex items-center justify-center'>
+                            <div className='  flex flex-col items-center justify-center md:flex-row'>
                                 <Swiper
 
                                     slidesPerView={1}
@@ -76,7 +88,7 @@ const BusinessList = () => {
                                         disableOnInteraction: true,
                                     }}
                                     modules={[Autoplay, Pagination, Navigation]}
-                                    className="mySwiper"
+                                    className="mySwiper w-full md:w-2/3 lg:w-1/2 xl:w-1/3"
 
 
                                 >
@@ -133,7 +145,7 @@ const BusinessList = () => {
                                     </SwiperSlide>
 
                                 </Swiper>
-                                <div className='ml-40'>
+                                <div className='mt-4 md:ml-4 md:w-full lg:w-1/2 xl:w-2/3'>
                                     <div className='flex justify-between'>
                                         <h2>BUSINESS CONTENT</h2>
                                         <h2>$1,849</h2>
@@ -164,7 +176,7 @@ const BusinessList = () => {
                             </div>
                         </div>
                         <div className='p-2 mb-5' style={{ border: '1px solid gray' }}>
-                            <div className='md:w-full  flex items-center justify-center'>
+                            <div className='  flex flex-col items-center justify-center md:flex-row'>
                                 <Swiper
 
                                     slidesPerView={1}
@@ -173,7 +185,7 @@ const BusinessList = () => {
                                         disableOnInteraction: true,
                                     }}
                                     modules={[Autoplay, Pagination, Navigation]}
-                                    className="mySwiper"
+                                    className="mySwiper w-full md:w-2/3 lg:w-1/2 xl:w-1/3"
 
 
                                 >
@@ -230,7 +242,7 @@ const BusinessList = () => {
                                     </SwiperSlide>
 
                                 </Swiper>
-                                <div className='ml-40'>
+                                <div className='mt-4 md:ml-4 md:w-full lg:w-1/2 xl:w-2/3'>
                                     <div className='flex justify-between'>
                                         <h2>BUSINESS CONTENT</h2>
                                         <h2>$1,849</h2>
@@ -260,8 +272,8 @@ const BusinessList = () => {
                                 <CiStar></CiStar>
                             </div>
                         </div>
-                        <div className='p-2' style={{ border: '1px solid gray' }}>
-                            <div className='md:w-full  flex items-center justify-center'>
+                        <div className='p-2 mb-5' style={{ border: '1px solid gray' }}>
+                            <div className='  flex flex-col items-center justify-center md:flex-row'>
                                 <Swiper
 
                                     slidesPerView={1}
@@ -270,7 +282,7 @@ const BusinessList = () => {
                                         disableOnInteraction: true,
                                     }}
                                     modules={[Autoplay, Pagination, Navigation]}
-                                    className="mySwiper"
+                                    className="mySwiper w-full md:w-2/3 lg:w-1/2 xl:w-1/3"
 
 
                                 >
@@ -327,7 +339,7 @@ const BusinessList = () => {
                                     </SwiperSlide>
 
                                 </Swiper>
-                                <div className='ml-40'>
+                                <div className='mt-4 md:ml-4 md:w-full lg:w-1/2 xl:w-2/3'>
                                     <div className='flex justify-between'>
                                         <h2>BUSINESS CONTENT</h2>
                                         <h2>$1,849</h2>
@@ -357,8 +369,8 @@ const BusinessList = () => {
                                 <CiStar></CiStar>
                             </div>
                         </div>
-                        <div className='p-2' style={{ border: '1px solid gray' }}>
-                            <div className='md:w-full  flex items-center justify-center'>
+                        <div className='p-2 mb-5' style={{ border: '1px solid gray' }}>
+                            <div className='  flex flex-col items-center justify-center md:flex-row'>
                                 <Swiper
 
                                     slidesPerView={1}
@@ -367,7 +379,7 @@ const BusinessList = () => {
                                         disableOnInteraction: true,
                                     }}
                                     modules={[Autoplay, Pagination, Navigation]}
-                                    className="mySwiper"
+                                    className="mySwiper w-full md:w-2/3 lg:w-1/2 xl:w-1/3"
 
 
                                 >
@@ -424,7 +436,7 @@ const BusinessList = () => {
                                     </SwiperSlide>
 
                                 </Swiper>
-                                <div className='ml-40'>
+                                <div className='mt-4 md:ml-4 md:w-full lg:w-1/2 xl:w-2/3'>
                                     <div className='flex justify-between'>
                                         <h2>BUSINESS CONTENT</h2>
                                         <h2>$1,849</h2>
@@ -553,7 +565,7 @@ const BusinessList = () => {
                     <div className="md:w-1/3 mt-4 md:mt-0">
 
 
-                        <ReactSlider
+                        {/* <ReactSlider
                             className="horizontal-slider"
                             thumbClassName="example-thumb"
                             trackClassName="example-track"
@@ -562,7 +574,141 @@ const BusinessList = () => {
                             min={1959}
                             renderThumb={(props, state) => <div {...props}>{state.valueNow}</div>}
 
-                        />
+                        /> */}
+
+                        {/* other components */}
+                        <div className='bg-[#774e88] p-8 lg:mr-24'>
+                            <div className='max-w-md mx-auto'>
+                                <h2 className='text-white text-2xl'>Refine Search</h2>
+                                <input
+                                    style={{ border: '1px solid black' }}
+                                    type="text"
+                                    placeholder="Keyword"
+                                    className="input my-4 w-full"
+                                />
+                                <div style={{ border: '1px solid black' }} className="my-4">
+                                    <select style={{ padding: '8px 6px' }} className="w-full bg-white cursor-pointer text-sm sm:text-base md:text-lg lg:text-xl">
+                                        <option>Please Select industry</option>
+                                        <option>Agriculture/Primary</option>
+                                        <option>Engineering</option>
+                                        <option>Hospitality</option>
+                                        <option>Manufacturing</option>
+                                        <option>Retail</option>
+                                        <option>Service</option>
+                                        <option>Transport/Distribution</option>
+                                    </select>
+
+                                </div>
+
+                                <div style={{ border: '1px solid black' }} className="my-4">
+                                    <select style={{ padding: '10px 8px' }} className="w-full bg-white cursor-pointer">
+                                        <option>Please Select industry</option>
+                                        <option>Agriculture/Primary</option>
+                                        <option>Engineering</option>
+                                        <option>Hospitality</option>
+                                        <option>Manufacturing</option>
+                                        <option>Retail</option>
+                                        <option>Service</option>
+                                        <option>Transport/Distribution</option>
+                                    </select>
+                                </div>
+
+                                <div style={{ border: '1px solid black' }} className="my-4">
+                                    <select style={{ padding: '10px 8px' }} className="w-full bg-white cursor-pointer">
+                                        <option>Please Select industry</option>
+                                        <option>Agriculture/Primary</option>
+                                        <option>Engineering</option>
+                                        <option>Hospitality</option>
+                                        <option>Manufacturing</option>
+                                        <option>Retail</option>
+                                        <option>Service</option>
+                                        <option>Transport/Distribution</option>
+                                    </select>
+                                </div>
+
+                                <div style={{ border: '1px solid black' }} className="my-4">
+                                    <select style={{ padding: '10px 8px' }} className="w-full bg-white cursor-pointer">
+                                        <option>Please Select industry</option>
+                                        <option>Agriculture/Primary</option>
+                                        <option>Engineering</option>
+                                        <option>Hospitality</option>
+                                        <option>Manufacturing</option>
+                                        <option>Retail</option>
+                                        <option>Service</option>
+                                        <option>Transport/Distribution</option>
+                                    </select>
+                                </div>
+
+                                <div style={{ border: '1px solid black' }} className="my-4">
+                                    <select style={{ padding: '10px 8px' }} className="w-full bg-white cursor-pointer">
+                                        <option>Please Select industry</option>
+                                        <option>Agriculture/Primary</option>
+                                        <option>Engineering</option>
+                                        <option>Hospitality</option>
+                                        <option>Manufacturing</option>
+                                        <option>Retail</option>
+                                        <option>Service</option>
+                                        <option>Transport/Distribution</option>
+                                    </select>
+                                </div>
+
+                                <div style={{ border: '1px solid black' }} className="my-4">
+                                    <select style={{ padding: '10px 8px' }} className="w-full bg-white cursor-pointer">
+                                        <option>Please Select industry</option>
+                                        <option>Agriculture/Primary</option>
+                                        <option>Engineering</option>
+                                        <option>Hospitality</option>
+                                        <option>Manufacturing</option>
+                                        <option>Retail</option>
+                                        <option>Service</option>
+                                        <option>Transport/Distribution</option>
+                                    </select>
+                                </div>
+
+                                <div style={{ border: '1px solid black' }} className="my-4">
+                                    <select style={{ padding: '10px 8px' }} className="w-full bg-white cursor-pointer">
+                                        <option>Please Select industry</option>
+                                        <option>Agriculture/Primary</option>
+                                        <option>Engineering</option>
+                                        <option>Hospitality</option>
+                                        <option>Manufacturing</option>
+                                        <option>Retail</option>
+                                        <option>Service</option>
+                                        <option>Transport/Distribution</option>
+                                    </select>
+                                </div>
+
+
+                                {/* Range bar */}
+                                <div className="mt-10">
+                                    <label htmlFor="range" className="block text-white  text-xl font-bold mb-2">
+                                        Price Range
+                                    </label>
+                                    <div className="flex justify-between items-center text-center my-8">
+                                        <h1 className='text-white'>Min$</h1>
+                                        <span className="text-gray-600 w-20 h-10 bg-white"> {minValue}</span>
+                                        <h2 className='text-white'>Min$</h2>
+                                        <span className="text-gray-600 p-2 w-20 h-10 bg-white"> {maxValue}</span>
+                                    </div>
+                                    <input
+                                        type="range"
+                                        id="range"
+                                        name="range"
+                                        min="0"
+                                        max="100"
+                                        step="1"
+                                        value={minValue}
+                                        onChange={handleRangeChange}
+                                        className="w-full mb-6"
+                                    />
+
+                                </div>
+                                <img src={img5} alt="" />
+
+                            </div>
+                        </div>
+
+
                     </div>
 
                 </div>
