@@ -8,6 +8,7 @@ import Blog from "../Pages/Home/Blog Section/Blog";
 import BusinessList from "../Pages/Home/Business List/BusinessList";
 import Gallery from "../Pages/Home/Gallery/Gallery";
 import Bonus from "../Pages/Home/Bonus/Bonus";
+import FranchiseDirectory from "../Pages/Franchise Directory/FranchiseDirectory";
 
 export const router = createBrowserRouter([
     {
@@ -38,6 +39,10 @@ export const router = createBrowserRouter([
             {
                 path: 'contactPost',
                 element: <Bonus></Bonus>
+            },
+            {
+                path: 'franchise',
+                element: <FranchiseDirectory></FranchiseDirectory>
             }
         ]
     },

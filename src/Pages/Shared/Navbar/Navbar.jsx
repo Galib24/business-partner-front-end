@@ -82,7 +82,7 @@ const Navbar = () => {
                                         <label tabIndex={0} className="flex justify-center items-center cursor-pointer">Franchisor<MdOutlineKeyboardArrowDown className='mr-2 ml-1'></MdOutlineKeyboardArrowDown> </label>
 
                                         <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-56">
-                                            <li><a>Franchisors Directory</a></li>
+                                            <li><Link to={'/franchise'}>Franchisors Directory</Link></li>
                                             <li><a>Franchisors Sales Promo</a></li>
                                             <li><a>Franchisors Directory Promo</a></li>
                                         </ul>
