@@ -9,6 +9,7 @@ import BusinessList from "../Pages/Home/Business List/BusinessList";
 import Gallery from "../Pages/Home/Gallery/Gallery";
 import Bonus from "../Pages/Home/Bonus/Bonus";
 import FranchiseDirectory from "../Pages/Franchise Directory/FranchiseDirectory";
+import Faq from "../Pages/Faq Section/Faq";
 
 export const router = createBrowserRouter([
     {
@@ -43,6 +44,10 @@ export const router = createBrowserRouter([
             {
                 path: 'franchise',
                 element: <FranchiseDirectory></FranchiseDirectory>
+            },
+            {
+                path: 'faq',
+                element: <Faq></Faq>
             }
         ]
     },

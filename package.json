@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "classnames": "^2.3.2",
+    "framer-motion": "^10.16.5",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "rc-slider": "^10.4.0",

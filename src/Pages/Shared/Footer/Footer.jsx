@@ -40,7 +40,7 @@ const Footer = () => {
                             <li className="link link-hover">Terms of Services</li>
                             <li className="link link-hover">Privacy Policy</li>
                             <li className="link link-hover">Site Map</li>
-                            <li className="link link-hover">FAQ</li>
+                            <li className="link link-hover"><Link to={'/faq'}>FAQ</Link></li>
                         </ul>
                         <ul className="mb-4">
                             <li className="footer-title">Business Search</li>
