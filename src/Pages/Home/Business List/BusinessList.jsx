@@ -22,7 +22,17 @@ const BusinessList = () => {
         setMaxValue(e.target.max - e.target.value);
     };
 
+    // pagination
 
+    const [currentPage, setCurrentPage] = useState(1);
+    const totalPages = 10; // Replace with the actual total number of pages
+
+    const handlePageChange = (page) => {
+        setCurrentPage(page);
+        // You can fetch data for the new page here or perform any other necessary actions
+    };
+
+    const pages = Array.from({ length: totalPages }, (_, index) => index + 1);
 
 
 
@@ -556,7 +566,22 @@ const BusinessList = () => {
                         </div>
 
 
+                        {/* pagination */}
 
+                        <div className="flex justify-center mt-4">
+                            {pages.map((page) => (
+                                <div
+                                    key={page}
+                                    onClick={() => handlePageChange(page)}
+                                    className={`cursor-pointer mx-1 px-3 py-2 border rounded ${currentPage === page
+                                            ? 'bg-blue-500 text-white'
+                                            : 'border-gray-300 hover:bg-gray-200'
+                                        }`}
+                                >
+                                    {page}
+                                </div>
+                            ))}
+                        </div>
 
 
                     </div>
