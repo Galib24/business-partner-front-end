@@ -41,7 +41,7 @@ const ThirdSection = () => {
                         }
                         ,
                         840: {
-                            slidesPerView: 3,
+                            slidesPerView: 4,
                             spaceBetween: 20,
                         }
                     }}
@@ -318,7 +318,7 @@ const ThirdSection = () => {
                         }
                         ,
                         840: {
-                            slidesPerView: 3,
+                            slidesPerView: 4,
                             spaceBetween: 20,
                         }
                     }}
