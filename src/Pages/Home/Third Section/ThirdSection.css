@@ -1,0 +1,33 @@
+.curve-container-tas,
+.curve-container-tsa {
+    position: absolute;
+    padding: 2px;
+    width: 66px;
+    height: 66px;
+    transform-origin: 100% 0;
+    top: 0;
+}
+
+.curve-container-tas {
+    background-color: #ff0303;
+    clip-path: polygon(0% 0%, 5% 100%, 100% 5%);
+    transform: translateY(-2px) translateX(-2px);
+}
+
+.curve-container-tas h2 {
+    transform: translateY(0) skewY(-10deg) rotate(-13deg);
+}
+
+@media (max-width: 767px) {
+    /* Adjustments for small devices */
+    .curve-container-tas,
+    .curve-container-tsa {
+        width: 66px;
+        height: 66px;
+        transform: translateY(-1px) translateX(-2px);
+    }
+
+    .curve-container-tas h2 {
+        transform: translateY(-1px) skewY(-10deg) rotate(-13deg);
+    }
+}
