@@ -34,7 +34,7 @@ const Footer = () => {
                     <div style={{ fontSize: '14px' }} className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 md:gap-10 lg:gap-10">
                         <ul className="mb-4">
                             <li className="footer-title">Company</li>
-                            <li className="link link-hover">About Us</li>
+                            <li className="link link-hover"><Link to={'/about'}>About Us</Link> </li>
                             <li className="link link-hover"><Link to={'/gallery'}>Gallery</Link></li>
                             <li className="link link-hover" ><Link to={'/contactPost'}>Contact Us</Link></li>
                             <li className="link link-hover">Terms of Services</li>

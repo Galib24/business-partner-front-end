@@ -10,6 +10,7 @@ import Gallery from "../Pages/Home/Gallery/Gallery";
 import Bonus from "../Pages/Home/Bonus/Bonus";
 import FranchiseDirectory from "../Pages/Franchise Directory/FranchiseDirectory";
 import Faq from "../Pages/Faq Section/Faq";
+import About from "../Pages/About Section/About";
 
 export const router = createBrowserRouter([
     {
@@ -48,6 +49,10 @@ export const router = createBrowserRouter([
             {
                 path: 'faq',
                 element: <Faq></Faq>
+            },
+            {
+                path: 'about',
+                element: <About></About>
             }
         ]
     },

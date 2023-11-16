@@ -5,6 +5,7 @@ import image1 from '../../../assets/images/player1.png'
 import image3 from '../../../assets/images/s1.jpg'
 import image4 from '../../../assets/images/s2.jpg'
 const Gallery = () => {
+    const [activeTab, setActiveTab] = useState('overview');
     const [selectedContent, setSelectedContent] = useState('overview');
     const [businessActivity, setSelectedContentBusinessActivity] = useState('businessActivity');
     const [Franchise, setSelectedContentFranchise] = useState('Franchise');
@@ -23,6 +24,7 @@ const Gallery = () => {
         setSelectedContentInnovation(content);
         setSelectedContentOpportunities(content);
         setSelectedContentInterest(content);
+        setActiveTab(content);
     };
 
     return (
@@ -111,7 +113,7 @@ const Gallery = () => {
                 </div>
             </div>
             <div className="p-2 ml-3 w-full h-full">
-                {selectedContent === 'overview' && (
+                {activeTab === 'overview' &&  (
                     <>
 
                         <div className='flex flex-wrap'>
@@ -139,8 +141,8 @@ const Gallery = () => {
 
                     </>
                 )}
-
-                {selectedContent === 'businessActivity' && (
+{/*  */}
+                {activeTab === 'businessActivity' && (
                     <>
                         <div className='flex flex-wrap'>
                             <div className="relative w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/6 p-2">
@@ -166,7 +168,8 @@ const Gallery = () => {
                         </div>
                     </>
                 )}
-                {selectedContent === 'Franchise' && (
+                {/*  */}
+                {activeTab === 'Franchise' && (
                     <>
                         <div className='flex flex-wrap'>
                             <div className="relative w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/6 p-2">
@@ -192,7 +195,8 @@ const Gallery = () => {
                         </div>
                     </>
                 )}
-                {selectedContent === 'Business' && (
+                {/*  */}
+                {activeTab === 'Business' &&(
                     <>
                          <div className='flex flex-wrap'>
                             <div className="relative w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/6 p-2">
@@ -218,7 +222,8 @@ const Gallery = () => {
                         </div>
                     </>
                 )}
-                {selectedContent === 'Partnership' && (
+                {/*  */}
+                {activeTab === 'Partnership' && (
                     <>
                          <div className='flex flex-wrap'>
                             <div className="relative w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/6 p-2">
@@ -244,7 +249,8 @@ const Gallery = () => {
                         </div>
                     </>
                 )}
-                {selectedContent === 'Innovation' && (
+                {/*  */}
+                {activeTab === 'Innovation' && (
                     <>
                         <div className='flex flex-wrap'>
                             <div className="relative w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/6 p-2">
@@ -270,7 +276,8 @@ const Gallery = () => {
                         </div>
                     </>
                 )}
-                {selectedContent === 'Opportunities' && (
+                {/*  */}
+                {activeTab === 'Opportunities' &&(
                     <>
                          <div className='flex flex-wrap'>
                             <div className="relative w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/6 p-2">
@@ -296,8 +303,8 @@ const Gallery = () => {
                         </div>
                     </>
                 )}
-
-                {selectedContent === 'Interest' && (
+{/*  */}
+                {activeTab === 'Interest' && (
                     <>
                          <div className='flex flex-wrap'>
                             <div className="relative w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/6 p-2">
