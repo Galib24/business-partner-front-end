@@ -45,6 +45,10 @@ const About = () => {
 
         setSearch(!Search);
     };
+    const Sixth = () => {
+
+        setSave(!Save);
+    };
     return (
         <>
             {/* title  */}
@@ -197,12 +201,12 @@ const About = () => {
                                         <img src={img4} className='w-full xl:w-6/12 xl:mt-14' alt="" />
                                     </div>
                                     <div className='container mx-auto mt-10'>
-                                        <div  className='my-1'>
+                                        <div className='my-1'>
                                             <div
                                                 className=" bg-[#4f287b]  w-full md:w-9/12 mx-auto sm:w-full text-white p-4 cursor-pointer"
                                                 onClick={First}
                                             >
-                                                <h2>Q 2. How can I look for business that i'm interested in?</h2>
+                                                <h2>Marketing Portal you can Trust</h2>
                                             </div>
 
                                             <AnimatePresence>
@@ -215,17 +219,17 @@ const About = () => {
                                                         className="bg-gray-100 p-4 w-full md:w-9/12 mx-auto sm:w-full shadow-md overflow-hidden"
                                                     >
                                                         {/* Dropdown content goes here */}
-                                                        <p className='text-sm text-[#3e3e3e]'>You can look for the businesses of your interest from the business listings available on the website. Click on ‘Buy a Business’ or ‘Buy a Franchise’ and you land on the specific page.</p>
+                                                        <p>The Business Post portal has been designed by experienced business professionals who understand your requirements. With our exclusive experience in business marketplace, we make sure our enterprising portal system helps you to find ideal business or a buyer. You can entrust Business Post for buying or selling a business.</p>
                                                     </motion.div>
                                                 )}
                                             </AnimatePresence>
                                         </div>
-                                        <div  className='my-1'>
+                                        <div className='my-1'>
                                             <div
                                                 className=" bg-[#4f287b]  w-full md:w-9/12 mx-auto sm:w-full text-white p-4 cursor-pointer"
                                                 onClick={Second}
                                             >
-                                                <h2>Q 2. How can I look for business that i'm interested in?</h2>
+                                                <h2>Business For Sale Network</h2>
                                             </div>
 
                                             <AnimatePresence>
@@ -238,17 +242,18 @@ const About = () => {
                                                         className="bg-gray-100 p-4 w-full md:w-9/12 mx-auto sm:w-full shadow-md overflow-hidden"
                                                     >
                                                         {/* Dropdown content goes here */}
-                                                        <p className='text-sm text-[#3e3e3e]'>You can look for the businesses of your interest from the business listings available on the website. Click on ‘Buy a Business’ or ‘Buy a Franchise’ and you land on the specific page.</p>
+                                                        <p>Do you want to buy or sell your business across Australia? Business Post can help you reach to the best opportunities you ever wanted! With our dedicated business sales portals network, you can buy or sell a business anywhere in Australia.
+                                                            Save Money and Hassle</p>
                                                     </motion.div>
                                                 )}
                                             </AnimatePresence>
                                         </div>
-                                        <div  className='my-1'>
+                                        <div className='my-1'>
                                             <div
                                                 className=" bg-[#4f287b]  w-full md:w-9/12 mx-auto sm:w-full text-white p-4 cursor-pointer"
                                                 onClick={Third}
                                             >
-                                                <h2>Q 2. How can I look for business that i'm interested in?</h2>
+                                                <h2>Save Money and Hassle</h2>
                                             </div>
 
                                             <AnimatePresence>
@@ -261,7 +266,7 @@ const About = () => {
                                                         className="bg-gray-100 p-4 w-full md:w-9/12 mx-auto sm:w-full shadow-md overflow-hidden"
                                                     >
                                                         {/* Dropdown content goes here */}
-                                                        <p className='text-sm text-[#3e3e3e]'>You can look for the businesses of your interest from the business listings available on the website. Click on ‘Buy a Business’ or ‘Buy a Franchise’ and you land on the specific page.</p>
+                                                        <p>Business Post provides you with hassle-free, very low cost and effective marketing services. Whether you are planning to acquire a business or sell a business, our comprehensively designed portal system saves you time, money and efforts.</p>
                                                     </motion.div>
                                                 )}
                                             </AnimatePresence>
@@ -271,7 +276,7 @@ const About = () => {
                                                 className=" bg-[#4f287b]  w-full md:w-9/12 mx-auto sm:w-full text-white p-4 cursor-pointer"
                                                 onClick={Fourth}
                                             >
-                                                <h2>Q 2. How can I look for business that i'm interested in?</h2>
+                                                <h2>Easy Registration, Fast Processing</h2>
                                             </div>
 
                                             <AnimatePresence>
@@ -284,17 +289,17 @@ const About = () => {
                                                         className="bg-gray-100 p-4 w-full md:w-9/12 mx-auto sm:w-full shadow-md overflow-hidden"
                                                     >
                                                         {/* Dropdown content goes here */}
-                                                        <p className='text-sm text-[#3e3e3e]'>You can look for the businesses of your interest from the business listings available on the website. Click on ‘Buy a Business’ or ‘Buy a Franchise’ and you land on the specific page.</p>
+                                                        <p>You can post your business promo with Business Post as a seller, franchisors or a business brokers in just a few easy steps, and start selling your opportunity to the business marketplace.</p>
                                                     </motion.div>
                                                 )}
                                             </AnimatePresence>
                                         </div>
-                                        <div>
+                                        <div className='my-1'>
                                             <div
                                                 className=" bg-[#4f287b]  w-full md:w-9/12 mx-auto sm:w-full text-white p-4 cursor-pointer"
                                                 onClick={Fifth}
                                             >
-                                                <h2>Q 2. How can I look for business that i'm interested in?</h2>
+                                                <h2>Social Marketing</h2>
                                             </div>
 
                                             <AnimatePresence>
@@ -307,7 +312,30 @@ const About = () => {
                                                         className="bg-gray-100 p-4 w-full md:w-9/12 mx-auto sm:w-full shadow-md overflow-hidden"
                                                     >
                                                         {/* Dropdown content goes here */}
-                                                        <p className='text-sm text-[#3e3e3e]'>You can look for the businesses of your interest from the business listings available on the website. Click on ‘Buy a Business’ or ‘Buy a Franchise’ and you land on the specific page.</p>
+                                                        <p>The power of social media can be an absolute game changer for your business! Business Post offers you the advantage of reaching out to the business fraternity through the social media channels for better exposure. Our exquisite central social site, Business Market Hub lets you manage your marketing on social media sites such as YouTube, Facebook, Instagram and others.</p>
+                                                    </motion.div>
+                                                )}
+                                            </AnimatePresence>
+                                        </div>
+                                        <div>
+                                            <div
+                                                className=" bg-[#4f287b]  w-full md:w-9/12 mx-auto sm:w-full text-white p-4 cursor-pointer"
+                                                onClick={Sixth}
+                                            >
+                                                <h2>Search Engine Optimization</h2>
+                                            </div>
+
+                                            <AnimatePresence>
+                                                {Save && (
+                                                    <motion.div
+                                                        initial={{ height: 0, opacity: 0 }}
+                                                        animate={{ height: 'auto', opacity: 1 }}
+                                                        exit={{ height: 0, opacity: 0 }}
+                                                        transition={{ duration: 0.1, ease: [0.42, 0, 0.58, 1] }}
+                                                        className="bg-gray-100 p-4 w-full md:w-9/12 mx-auto sm:w-full shadow-md overflow-hidden"
+                                                    >
+                                                        {/* Dropdown content goes here */}
+                                                        <p>Reaching out to the right audience, at the right time, in the right way is important in the social media marketing and it needs skills. But you don’t need to bother, because our skillful SEO team is right here to help you at every step of the way. Business Post is proud to have a strong SEO team that is competent to take your business effectively to the social media channels and help you achieve higher exposure and better prospects.</p>
                                                     </motion.div>
                                                 )}
                                             </AnimatePresence>
