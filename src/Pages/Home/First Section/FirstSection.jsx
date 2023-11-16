@@ -4,8 +4,8 @@ import image from '../../../assets/images/about-us-img.png';
 const FirstSection = () => {
   return (
     <>
-      <div className='container mx-auto'>
-        <div className='grid grid-cols-1 gap-3 sm:grid-cols-2 my-12  sm:mx-0'>
+      <div className='container bg-white mx-auto'>
+        <div className='grid grid-cols-1 gap-3 sm:grid-cols-2 mb-10  sm:mx-0'>
           <div className='mt-8 sm:mt-28 md:mt-0 lg:ml-40 lg:mt-32'>
             <hr style={{ border: '3px solid #774e88', borderRadius: '5px 5px 5px 5px', width: '80px' }} />
             <h2 style={{ fontSize: '28px' }} className='font-bold mt-2'>

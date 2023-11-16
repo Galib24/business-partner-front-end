@@ -137,6 +137,7 @@ const Faq = () => {
                         <hr className='h-1 bg-[#4f287b] w-16 ' />
                         <h2 className='text-2xl font-bold'>FAQs</h2>
                     </div>
+                    
                     <div
                         className="bg-[#4f287b]  w-full md:w-9/12 mx-auto sm:w-full text-white p-4 cursor-pointer"
                         onClick={mad}
