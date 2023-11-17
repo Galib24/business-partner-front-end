@@ -12,8 +12,8 @@ const ThirdSection = () => {
 
         <>
 
-            <div className='container bg-[#e9e9e9] mx-auto'>
-            <div className='lg:ml-10 mb-5'>
+            <div className='container bg-[#e9e9e9] xl:px-16 md:px-16 px-10 mx-auto'>
+            <div className='lg:ml-10  mb-5'>
                         <hr className='h-1 bg-[#4f287b] w-16 ' />
                         <div className='flex gap-2'>
                         <h2 className='text-2xl font-bold'>Featured </h2>
@@ -29,7 +29,7 @@ const ThirdSection = () => {
                         disableOnInteraction: true,
                     }}
                     modules={[Autoplay, Pagination, Navigation]}
-                    className="mySwiper w-full md:w-2/3 lg:full xl:w-full"
+                    className="mySwiper w-full md:w-full  lg:full xl:w-full"
                     breakpoints={{
                         0: {
                             slidesPerView: 1,
@@ -306,7 +306,7 @@ const ThirdSection = () => {
                         disableOnInteraction: true,
                     }}
                     modules={[Autoplay, Pagination, Navigation]}
-                    className="mySwiper w-full md:w-2/3 lg:full xl:w-full"
+                    className="mySwiper w-full md:w-full lg:full xl:w-full"
                     breakpoints={{
                         0: {
                             slidesPerView: 1,
