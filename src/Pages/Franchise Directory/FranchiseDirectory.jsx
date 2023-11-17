@@ -29,11 +29,11 @@ const FranchiseDirectory = () => {
                 </div>
             </div>
             <div className="bg-white min-h-screen container mx-auto flex items-center justify-center">
-                <div className="container xl:ml-60  mx-auto gap-5 p-4 md:p-8 flex flex-col md:flex-row">
+                <div className="container   mx-auto gap-5 p-4 md:p-8 overflow-x-hidden flex flex-col md:flex-row">
 
 
                     {/* Left Part (Text) */}
-                    <div className="md:w-2/3  md:pr-8">
+                    <div className="md:w-2/3 xl:ml-32  md:pr-8">
                         <div className='p-3 w-28  text-center mb-4 bg-[#774E88] text-white'>
                             Back
                         </div>
@@ -190,7 +190,7 @@ const FranchiseDirectory = () => {
                                 <FaEye className='text-white'></FaEye>
                             </div>
                         </div>
-                        <div className='bg-[#774E88] py-5 text-white w-8/12'>
+                        <div className='bg-[#774E88] py-5 md:w-full  text-white xl:w-8/12'>
                             <h2 className='text-xl font-bold'>Summary Info</h2>
 
                             <hr className='text-white mt-5 mb-4' />
@@ -219,7 +219,7 @@ const FranchiseDirectory = () => {
                                 <h2 className='xl:mr-16 text-sm'>$745000</h2>
                             </div>
                             <hr className='text-white mb-4' />
-                            <hr className='text-white mt-5 mb-4' />
+                          
                             <div className='flex justify-between'>
                                 <h2 className='text-sm ml-2'>Counrty</h2>
                                 <h2 className='xl:mr-20 text-sm'>Australia</h2>
@@ -245,7 +245,7 @@ const FranchiseDirectory = () => {
                                 <h2 className='xl:mr-16 text-sm'>$745000</h2>
                             </div>
                             <hr className='text-white mb-4' />
-                            <hr className='text-white mt-5 mb-4' />
+                            
                             <div className='flex justify-between'>
                                 <h2 className='text-sm ml-2'>Counrty</h2>
                                 <h2 className='xl:mr-20 text-sm'>Australia</h2>
@@ -271,7 +271,7 @@ const FranchiseDirectory = () => {
                                 <h2 className='xl:mr-16 text-sm'>$745000</h2>
                             </div>
                             <hr className='text-white mb-4' />
-                            <hr className='text-white mt-5 mb-4' />
+                           
                             <div className='flex justify-between'>
                                 <h2 className='text-sm ml-2'>Counrty</h2>
                                 <h2 className='xl:mr-20 text-sm'>Australia</h2>
@@ -297,7 +297,7 @@ const FranchiseDirectory = () => {
                                 <h2 className='xl:mr-16 text-sm'>$745000</h2>
                             </div>
                             <hr className='text-white mb-4' />
-                            <hr className='text-white mt-5 mb-4' />
+                         
                             <div className='flex justify-between'>
                                 <h2 className='text-sm ml-2'>Counrty</h2>
                                 <h2 className='xl:mr-20 text-sm'>Australia</h2>
@@ -323,7 +323,7 @@ const FranchiseDirectory = () => {
                                 <h2 className='xl:mr-16 text-sm'>$745000</h2>
                             </div>
                             <hr className='text-white mb-4' />
-                            <hr className='text-white mt-5 mb-4' />
+                           
                             <div className='flex justify-between'>
                                 <h2 className='text-sm ml-2'>Counrty</h2>
                                 <h2 className='xl:mr-20 text-sm'>Australia</h2>
@@ -434,7 +434,7 @@ const FranchiseDirectory = () => {
                 </form>
 
                 {/* contact seller */}
-                <div className='bg-[#4f287b] text-white w-full md:w-3/12 h-auto md:h-48 rounded-2xl p-4'>
+                <div className='bg-[#4f287b] text-white w-full md:full xl:w-3/12 h-auto md:h-48 rounded-2xl p-4'>
                     <h2 className='text-center text-lg font-bold mb-2'>Contact Seller</h2>
                     {/* divider part */}
                     <hr className='text-white mt-10 mb-5'/>
