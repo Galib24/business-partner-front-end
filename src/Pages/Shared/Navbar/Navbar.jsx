@@ -90,7 +90,7 @@ const Navbar = () => {
                                 </li>
                                 <li>
                                     <div className="w-fit">
-                                        <h2>Business Wanted</h2>
+                                        <Link to={'/businessWanted'}>Business Wanted</Link>
                                     </div>
                                 </li>
 

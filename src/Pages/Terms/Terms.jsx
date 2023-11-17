@@ -3,7 +3,7 @@ import React from 'react';
 const Terms = () => {
     return (
         <>
-            {/*title  */}
+           
             {/* title */}
             <div className='p-24  container  mx-auto   bg-[#774e88]'>
                 <h2 style={{ fontSize: '26px' }} className='mt-10 ml-20 font-bold text-white'>Terms of Service</h2>
