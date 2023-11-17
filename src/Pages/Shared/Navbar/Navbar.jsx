@@ -47,7 +47,7 @@ const Navbar = () => {
                                         <label tabIndex={0} className="flex justify-center items-center cursor-pointer">Buy a Franchise<MdOutlineKeyboardArrowDown className='mr-2 ml-1'></MdOutlineKeyboardArrowDown> </label>
 
                                         <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                                            <li><a>Search For Franchise</a></li>
+                                            <li><Link to={'/businessList'}>Search For Franchise</Link></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -83,8 +83,8 @@ const Navbar = () => {
 
                                         <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-56">
                                             <li><Link to={'/franchise'}>Franchisors Directory</Link></li>
-                                            <li><a>Franchisors Sales Promo</a></li>
-                                            <li><a>Franchisors Directory Promo</a></li>
+                                            <li><Link to={'/login'}>Franchisors Sales Promo</Link></li>
+                                            <li><Link to={'/login'}>Franchisors Directory Promo</Link></li>
                                         </ul>
                                     </div>
                                 </li>

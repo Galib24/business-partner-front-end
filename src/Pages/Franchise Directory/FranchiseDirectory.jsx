@@ -180,7 +180,7 @@ const FranchiseDirectory = () => {
 
                     {/* Right Part (Image) */}
                     <div className="md:w-1/3 mt-4 md:mt-0">
-                        <div className='flex justify-between md:flex-col xl:flex-row items-center mb-2 '>
+                        <div className='flex justify-between gap-3 md:flex-col xl:flex-row items-center mb-2 '>
                             <div className='p-3    xl:ml-16   w-44  text-center flex justify-center  items-center mb-4 bg-[#774E88] text-white '>
                              <CiStar className='mr-2 '></CiStar>
                               <h2> Save The Business</h2>

@@ -311,6 +311,7 @@ const Faq = () => {
                         <hr className='h-1 bg-[#4f287b] w-16 ' />
                         <h2 className='text-2xl font-bold'>Buyer's FAQs</h2>
                     </div>
+                    {/* divider */}
                     <div
                         className="divider mb-4">
 
