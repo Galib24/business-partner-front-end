@@ -18,8 +18,8 @@ const FranchiseDirectory = () => {
             {/* title */}
 
             <div className=" px-10 md:px-14 lg:px-10 bg-[#774E88] h-[130px] md:h-[160px] lg:h-[200px] flex justify-between items-center">
-                <h1 className="mt-[80px] md:mt-0 lg:mt-0 text-2xl text-white"> Business Profile</h1>
-                <div className="hidden md:block lg:block md:mt-[104px] lg:mt-[142px] xl:mr-36">
+                <h1 className="mt-[80px] md:mt-0 lg:mt-0 text-2xl text-white ml-32"> Business Profile</h1>
+                <div className="hidden md:block lg:block md:mt-[104px]  lg:mt-[142px] xl:mr-10">
                     <button className="text-white bg-[#291958] p-4">
                         <h2>Home</h2>
                         
@@ -29,12 +29,12 @@ const FranchiseDirectory = () => {
                 </div>
             </div>
             <div className="bg-white min-h-screen container mx-auto flex items-center justify-center">
-                <div className="container  mx-auto gap-5 p-4 md:p-8 flex flex-col md:flex-row">
+                <div className="container xl:ml-60  mx-auto gap-5 p-4 md:p-8 flex flex-col md:flex-row">
 
 
                     {/* Left Part (Text) */}
-                    <div className="md:w-2/3 md:pr-8">
-                        <div className='p-3 w-28 text-center mb-4 bg-[#774E88] text-white'>
+                    <div className="md:w-2/3  md:pr-8">
+                        <div className='p-3 w-28  text-center mb-4 bg-[#774E88] text-white'>
                             Back
                         </div>
 
@@ -180,13 +180,13 @@ const FranchiseDirectory = () => {
 
                     {/* Right Part (Image) */}
                     <div className="md:w-1/3 mt-4 md:mt-0">
-                        <div className='flex justify-between  w-30 '>
-                            <div className='p-3 xl:ml-16 ml-44 s w-44  text-center flex justify-center items-center mb-4 bg-[#774E88] text-white '>
-                             <CiStar className='mr-2'></CiStar>
+                        <div className='flex justify-between md:flex-col xl:flex-row items-center mb-2 '>
+                            <div className='p-3    xl:ml-16   w-44  text-center flex justify-center  items-center mb-4 bg-[#774E88] text-white '>
+                             <CiStar className='mr-2 '></CiStar>
                               <h2> Save The Business</h2>
 
                             </div>
-                            <div className='w-12 h-12 flex justify-center items-center  bg-[#774E88] text-white xl:mr-40'>
+                            <div className='w-12 h-12 flex justify-center items-center  bg-[#774E88] text-white xl:mb-4 xl:mr-40'>
                                 <FaEye className='text-white'></FaEye>
                             </div>
                         </div>
