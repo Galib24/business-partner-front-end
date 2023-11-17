@@ -1,0 +1,17 @@
+.curve-mal,
+.curve-mal {
+    position: absolute;
+    padding: 2px;
+    width: 100px;
+    height: 80px;
+    transform-origin: 100% 0;
+    top: 0;
+}
+.curve-mal {
+    background-color: #073855;
+    clip-path: polygon(100% 100%, 100% 5%, 5% 5%);
+    transform: translateY(-2px) translateX(-2px);
+}
+.curve-mal h2 {
+    transform: translateY(0) skewX(-10deg) rotate(35deg);
+}

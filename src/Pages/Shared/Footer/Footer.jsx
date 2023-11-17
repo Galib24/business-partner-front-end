@@ -63,7 +63,7 @@ const Footer = () => {
                         </ul>
                         <ul className="mb-4">
                             <li className="footer-title">Marketplace</li>
-                            <li className="link link-hover">Business Market
+                            <li className="link link-hover"><Link to={'/price'}>Business Market</Link> 
                             </li>
                             <li className="link link-hover">Business National</li>
                             <li className="link link-hover">BInvest</li>

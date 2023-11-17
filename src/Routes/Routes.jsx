@@ -11,6 +11,7 @@ import Bonus from "../Pages/Home/Bonus/Bonus";
 import FranchiseDirectory from "../Pages/Franchise Directory/FranchiseDirectory";
 import Faq from "../Pages/Faq Section/Faq";
 import About from "../Pages/About Section/About";
+import Pricing from "../Pages/Pricing Plans/Pricing";
 
 export const router = createBrowserRouter([
     {
@@ -53,6 +54,10 @@ export const router = createBrowserRouter([
             {
                 path: 'about',
                 element: <About></About>
+            },
+            {
+                path: 'price',
+                element: <Pricing></Pricing>
             }
         ]
     },
