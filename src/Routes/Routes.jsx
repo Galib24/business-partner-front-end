@@ -14,6 +14,7 @@ import About from "../Pages/About Section/About";
 import Pricing from "../Pages/Pricing Plans/Pricing";
 import Terms from "../Pages/Terms/Terms";
 import BusinessWanted from "../Pages/Business Wanted/BusinessWanted";
+import Privacy from "../Pages/Privacy Policy/Privacy";
 
 export const router = createBrowserRouter([
     {
@@ -68,6 +69,10 @@ export const router = createBrowserRouter([
             {
                 path: 'businessWanted',
                 element: <BusinessWanted></BusinessWanted>
+            },
+            {
+                path: 'privacy',
+                element: <Privacy></Privacy>
             }
         ]
     },

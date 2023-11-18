@@ -20,7 +20,7 @@ const BusinessWanted = () => {
         <>
             {/* title */}
             <div className='p-24  container  mx-auto   bg-[#774e88]'>
-                <h2 style={{ fontSize: '26px' }} className='mt-10 ml-20 font-bold text-white'>Business Wanted</h2>
+                <h2 style={{ fontSize: '26px' }} className='mt-10 ml-20 font-bold text-white'>Privacy Policy</h2>
                 <div className='hidden relative bottom-44 sm:block'>
                     <div className='flex justify-center items-center p-3 overflow-clip absolute top-56 right-28  lg:w-60 px-5 text-white  bg-[#291958]'>
                         <h2>Home </h2>
