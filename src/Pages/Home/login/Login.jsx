@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import YouTube from 'react-youtube';
 import image1 from './../../../assets/images/recaptcha.png';
 import { TfiFacebook } from 'react-icons/tfi';
+// import { FaFacebookSquare } from "react-icons/fa";
+import img from '../../../assets/images/google-icon.png'
+import img2 from '../../../assets/images/facebook-icon.png'
 import './Login.css';
 
 const Login = () => {
@@ -124,6 +127,30 @@ const Login = () => {
                                         {/* Divider */}
                                         <div className='divider mb-4'>OR</div>
                                     </div>
+
+                                    {/* <div style={{ borderRadius: '50px' }} className='bg-white w-20 h-20 text-center flex items-center justify-center hover:shadow-xl '>
+                                        <h2 className='mt-2'>G</h2>
+                                    </div> */}
+                                    <div className='flex justify-center items-center gap-5'>
+                                        <div
+                                            style={{ borderRadius: '50px' }}
+                                            className='bg-white w-16 h-16 text-center flex items-center justify-center gem-box'
+                                        >
+                                            <h2 className='mt-2'>
+                                                <img src={img2} alt="" />
+                                            </h2>
+                                        </div>
+                                        <div
+                                            style={{ borderRadius: '50px' }}
+                                            className='bg-white w-16 h-16 text-center flex items-center justify-center gem-box'
+                                        >
+                                            <h2 className='mt-2'>
+                                                <img src={img} alt="" />
+                                            </h2>
+                                        </div>
+                                    </div>
+
+
                                 </>
                             )}
 
