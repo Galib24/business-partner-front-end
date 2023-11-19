@@ -39,7 +39,7 @@ const Navbar = () => {
 
     return (
         <div
-            className={`fixed  z-10 bg-opacity-10 ${scrolled ? 'bg-white bg-opacity-100  text-black ease-in-out transition-all duration-300 ' : 'bg-black text-white'} w-full top-0 py-2 lg:py-0`}>
+            className={`fixed  z-10  xl:bg-opacity-100 ${scrolled ? 'bg-white xl:opacity-100  text-black ease-in-out transition-all duration-300 ' : 'xl:bg-black xl:bg-opacity-25 bg-white  text-white'} w-full bg-white top-0 py-2 lg:py-0`}>
             <header
                 className="container mx-auto">
                 <nav
