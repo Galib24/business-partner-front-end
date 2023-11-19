@@ -54,7 +54,7 @@ const BusinessList = () => {
 
             {/* separate  part */}
             <div className="bg-white container mx-auto flex items-center justify-center">
-                <div className="container lg:ml-20 mx-auto gap-5 p-4 md:p-8 flex flex-col md:flex-row">
+                <div className="container  mx-auto gap-5 p-4 md:p-8 flex flex-col md:flex-row">
 
                     {/* Left Part (Text) */}
                     <div className="md:w-2/3 md:pr-8">

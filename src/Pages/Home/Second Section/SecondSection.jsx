@@ -115,7 +115,7 @@ const SecondSection = () => {
         <>
             <footer className="footer container xl:px-12 mx-auto md:bg-[#6f42c1] xl:bg-[#291958] bg-[#291958] text-neutral-content ">
 
-                <div className='flex flex-wrap gap-6 justify-center mt-10 ml-10 mb-14 md:grid md:grid-cols-4 xl:grid-cols-6  xl:gap-28 '>
+                <div className='flex flex-wrap gap-6 justify-center mt-10 ml-10 mb-14 md:grid md:grid-cols-4 xl:grid-cols-6  xl:gap-16 '>
                     <ul>
                         <li style={{ fontSize: '14px' }} className="text-white">Business Markets</li>
                         <div style={{ border: '1px solid #83c3f0' }} class="border-b  border-gray-500 my-2"></div>
@@ -194,33 +194,32 @@ const SecondSection = () => {
                         )}
                     </ul>
                     <ul>
-                        <li style={{ fontSize: '14px' }} className="text-white">Franchise Markets
+                        <li style={{ fontSize: '14px' }} className="text-white">Biz Migration Market
                         </li>
                         <div style={{ border: '1px solid #83c3f0' }} class="border-b  border-gray-500 my-2"></div>
 
-                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Australian Business Sales</li>
-                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">NSW Business Sales</li>
-                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">QLD Business Sales</li>
-                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0]  text-white">VIC Business Sales</li>
+                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">NSW Home Based Business</li>
+                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">QLD Home Based Business</li>
+                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">VIC Home Based Business</li>
+                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0]  text-white">WA Home Based Business</li>
                         {itemsToShow3 >= 4 && (
                             <>
 
                                 {itemsToShow3 >= 6 && (
                                     <>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">WA Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">NT Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">ACT Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">TAS Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">SA Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Sydney Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Brisbane Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Melbourne Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Perth Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Adelaide Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Hobart Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Darwin Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Canberra Business Sales
-                                        </li>
+                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">NT Home Based Business</li>
+                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">ACT Home Based Business</li>
+                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">TAS Home Based Business</li>
+                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">SA Home Based Business</li>
+                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Sydney Home Based Business</li>
+                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Brisbane Home Based Business</li>
+                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Melbourne Home Based Business</li>
+                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Perth Home Based Business</li>
+                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Adelaide Home Based Business</li>
+                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Hobart Home Based Business</li>
+                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Darwin Home Based Business</li>
+                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Canberra Home Based Business</li>
+                                    
                                     </>
                                 )}
                             </>
@@ -233,33 +232,22 @@ const SecondSection = () => {
                         )}
                     </ul>
                     <ul>
-                        <li style={{ fontSize: '14px' }} className="text-white">Franchise Markets
+                        <li style={{ fontSize: '14px' }} className="text-white">Online Biz Markets
                         </li>
                         <div style={{ border: '1px solid #83c3f0' }} class="border-b  border-gray-500 my-2"></div>
 
-                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Australian Business Sales</li>
-                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">NSW Business Sales</li>
-                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">QLD Business Sales</li>
-                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0]  text-white">VIC Business Sales</li>
+                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Website Sales</li>
+                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Domain Sales</li>
+                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">APP Sales</li>
+                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0]  text-white">Ecommerce Business Sales</li>
                         {itemsToShow4 >= 4 && (
                             <>
 
                                 {itemsToShow4 >= 6 && (
                                     <>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">WA Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">NT Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">ACT Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">TAS Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">SA Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Sydney Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Brisbane Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Melbourne Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Perth Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Adelaide Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Hobart Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Darwin Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Canberra Business Sales
-                                        </li>
+                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Digital Marketing</li>
+
+                                       
                                     </>
                                 )}
                             </>
@@ -272,32 +260,32 @@ const SecondSection = () => {
                         )}
                     </ul>
                     <ul>
-                        <li style={{ fontSize: '14px' }} className="text-white">Franchise Markets
+                        <li style={{ fontSize: '14px' }} className="text-white">Innovation Market
                         </li>
                         <div style={{ border: '1px solid #83c3f0' }} class="border-b  border-gray-500 my-2"></div>
 
-                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Australian Business Sales</li>
-                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">NSW Business Sales</li>
-                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">QLD Business Sales</li>
-                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0]  text-white">VIC Business Sales</li>
+                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Australian Rural Biz Sales</li>
+                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">NSW Rural Biz Sales</li>
+                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">QLD Rural Biz Sales</li>
+                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0]  text-white">VIC Rural Biz Sales</li>
                         {itemsToShow5 >= 4 && (
                             <>
 
                                 {itemsToShow5 >= 6 && (
                                     <>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">WA Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">NT Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">ACT Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">TAS Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">SA Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Sydney Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Brisbane Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Melbourne Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Perth Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Adelaide Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Hobart Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Darwin Business Sales</li>
-                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Canberra Business Sales
+                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">WA Rural Biz Sales</li>
+                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">NT Rural Biz Sales</li>
+                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">ACT Rural Biz Sales</li>
+                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">TAS Rural Biz Sales</li>
+                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">SA Rural Biz Sales</li>
+                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Sydney Rural Biz Sales</li>
+                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Brisbane Rural Biz Sales</li>
+                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Melbourne Rural Biz Sales</li>
+                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Perth Rural Biz Sales</li>
+                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Adelaide Rural Biz Sales</li>
+                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Hobart Rural Biz Sales</li>
+                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Darwin Rural Biz Sales</li>
+                                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Canberra Rural Biz Sales
                                         </li>
                                     </>
                                 )}
@@ -311,14 +299,15 @@ const SecondSection = () => {
                         )}
                     </ul>
                     <ul>
-                        <li style={{ fontSize: '14px' }} className="text-white">Franchise Markets
+                        <li style={{ fontSize: '14px' }} className="text-white">Popular Business Market
                         </li>
                         <div style={{ border: '1px solid #83c3f0' }} class="border-b  border-gray-500 my-2"></div>
 
                         <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Australian Business Sales</li>
-                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">NSW Business Sales</li>
                         <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">QLD Business Sales</li>
-                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0]  text-white">VIC Business Sales</li>
+                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">VIC Business Sales</li>
+                        <li style={{ fontSize: '12px' }} className="cursor-pointer hover:text-[#83c3f0] my-2 text-white">Melbourne</li>
+                       
                         {itemsToShow6 >= 4 && (
                             <>
 

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { TiSocialFacebook, TiSocialInstagram, TiSocialPinterest, TiSocialYoutube } from "react-icons/ti";
+import { TiSocialLinkedin } from "react-icons/ti";
 
 const Footer = () => {
     return (
@@ -20,8 +22,8 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        
-                     
+
+
 
 
                     </div>
@@ -33,57 +35,89 @@ const Footer = () => {
                 <footer className="footer p-4 md:p-10 bg-[#291958] text-white container mx-auto flex flex-col justify-between items-center max-h-screen overflow-y-auto">
                     <div style={{ fontSize: '14px' }} className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 md:gap-10 lg:gap-10">
                         <ul className="mb-4">
-                            <li className="footer-title">Company</li>
-                            <li className="link link-hover"><Link to={'/about'}>About Us</Link> </li>
-                            <li className="link link-hover"><Link to={'/gallery'}>Gallery</Link></li>
-                            <li className="link link-hover" ><Link to={'/contactPost'}>Contact Us</Link></li>
-                            <li className="link link-hover"><Link to={'/terms'}>Terms of Services</Link> </li>
-                            <li className="link link-hover"> <Link to={'/privacy'}>Privacy Policy</Link> </li>
-                            <li className="link link-hover">Site Map</li>
-                            <li className="link link-hover"><Link to={'/faq'}>FAQ</Link></li>
+                            <li className=""><Link style={{ fontSize: '14px' }} className="text-white">Company</Link> </li>
+                            <div style={{ border: '1px solid #83c3f0' }} class="border-b  border-gray-500 my-2"></div>
+                            
+                            <li className="cursor-pointer hover:text-[#83c3f0] my-2"><Link to={'/about'}>About Us</Link> </li>
+                            <li className="cursor-pointer hover:text-[#83c3f0] my-2"><Link to={'/gallery'}>Gallery</Link></li>
+                            <li className="cursor-pointer hover:text-[#83c3f0] my-2" ><Link to={'/contactPost'}>Contact Us</Link></li>
+                            <li className="cursor-pointer hover:text-[#83c3f0] my-2"><Link to={'/terms'}>Terms of Services</Link> </li>
+                            <li className="cursor-pointer hover:text-[#83c3f0] my-2"> <Link to={'/privacy'}>Privacy Policy</Link> </li>
+                            <li className="cursor-pointer hover:text-[#83c3f0] my-2">Site Map</li>
+                            <li className="cursor-pointer hover:text-[#83c3f0] my-2"><Link to={'/faq'}>FAQ</Link></li>
                         </ul>
                         <ul className="mb-4">
-                            <li className="footer-title">Business Search</li>
-                            <li className="link link-hover">Business Opportunities</li>
-                            <li className="link link-hover"><Link to={'/businessList'}>Franchise Opportunities</Link></li>
-                            <li className="link link-hover">Partnership Opportunities</li>
-                            <li className="link link-hover">Innovation Opportunities</li>
-                            <li className="link link-hover">Internet Opportunities</li>
-                            <li className="link link-hover">Migration Opportunities</li>
+                            <li className="style={{ fontSize: '14px' }}">Business Search</li>
+                            <div style={{ border: '1px solid #83c3f0' }} class="border-b  border-gray-500 my-2"></div>
+                            <li className="cursor-pointer hover:text-[#83c3f0] my-2">Business Opportunities</li>
+                            <li className="cursor-pointer hover:text-[#83c3f0] my-2"><Link to={'/businessList'}>Franchise Opportunities</Link></li>
+                            <li className="cursor-pointer hover:text-[#83c3f0] my-2">Partnership Opportunities</li>
+                            <li className="cursor-pointer hover:text-[#83c3f0] my-2">Innovation Opportunities</li>
+                            <li className="cursor-pointer hover:text-[#83c3f0] my-2">Internet Opportunities</li>
+                            <li className="cursor-pointer hover:text-[#83c3f0] my-2">Migration Opportunities</li>
                         </ul>
                         <ul className="mb-4">
-                            <li className="footer-title">Advertise</li>
-                            <li className="link link-hover">Advertise for Free</li>
-                            <li className="link link-hover">Business Sales</li>
-                            <li className="link link-hover">Franchise Sales</li>
-                            <li className="link link-hover">Partnership Sales</li>
-                            <li className="link link-hover">Innovation Sales</li>
-                            <li className="link link-hover">Websites Sales</li>
-                            <li className="link link-hover">Business Migration</li>
+                            <li className="style={{ fontSize: '14px' }}">Advertise</li>
+                            <div style={{ border: '1px solid #83c3f0' }} class="border-b  border-gray-500 my-2"></div>
+                            <li className="cursor-pointer hover:text-[#83c3f0] my-2">Advertise for Free</li>
+                            <li className="cursor-pointer hover:text-[#83c3f0] my-2">Business Sales</li>
+                            <li className="cursor-pointer hover:text-[#83c3f0] my-2">Franchise Sales</li>
+                            <li className="cursor-pointer hover:text-[#83c3f0] my-2">Partnership Sales</li>
+                            <li className="cursor-pointer hover:text-[#83c3f0] my-2">Innovation Sales</li>
+                            <li className="cursor-pointer hover:text-[#83c3f0] my-2">Websites Sales</li>
+                            <li className="cursor-pointer hover:text-[#83c3f0] my-2">Business Migration</li>
                         </ul>
                         <ul className="mb-4">
-                            <li className="footer-title">Marketplace</li>
-                            <li className="link link-hover"><Link to={'/price'}>Business Market</Link> 
+                            <li className="style={{ fontSize: '14px' }}">Marketplace</li>
+                            <div style={{ border: '1px solid #83c3f0' }} class="border-b  border-gray-500 my-2"></div>
+                            <li className="cursor-pointer hover:text-[#83c3f0] my-2"><Link to={'/price'}>Business Market</Link>
                             </li>
-                            <li className="link link-hover">Business National</li>
-                            <li className="link link-hover">BInvest</li>
-                            <li className="link link-hover">Immigration Post</li>
-                            <li className="link link-hover">Franchise Post</li>
-                            <li className="link link-hover">Biz search</li>
+                            <li className="cursor-pointer hover:text-[#83c3f0] my-2">Business National</li>
+                            <li className="cursor-pointer hover:text-[#83c3f0] my-2">BInvest</li>
+                            <li className="cursor-pointer hover:text-[#83c3f0] my-2">Immigration Post</li>
+                            <li className="cursor-pointer hover:text-[#83c3f0] my-2">Franchise Post</li>
+                            <li className="cursor-pointer hover:text-[#83c3f0] my-2">Biz search</li>
                         </ul>
                         <ul className="mb-4">
-                            <li className="footer-title">Entrepreneur Center</li>
-                            <li className="link link-hover">Business Valuation</li>
-                            <li className="link link-hover">Business Finance</li>
-                            <li className="link link-hover"><Link to={'/blogs'}>Business Blog Posts</Link></li>
+                            <li className="style={{ fontSize: '14px' }}">Entrepreneur Center</li>
+                            <div style={{ border: '1px solid #83c3f0' }} class="border-b  border-gray-500 my-2"></div>
+                            <li className="cursor-pointer hover:text-[#83c3f0] my-2">Business Valuation</li>
+                            <li className="cursor-pointer hover:text-[#83c3f0] my-2">Business Finance</li>
+                            <li className="cursor-pointer hover:text-[#83c3f0] my-2"><Link to={'/blogs'}>Business Blog Posts</Link></li>
                         </ul>
                         <ul className="mb-4">
-                            <li className="footer-title">Stay Connected</li>
-                            <li className="link link-hover">Facebook</li>
-                            <li className="link link-hover">Linkedin</li>
-                            <li className="link link-hover">Instagram</li>
-                            <li className="link link-hover">Pinterest</li>
-                            <li className="link link-hover">Youtube</li>
+                            <li className="style={{ fontSize: '14px' }}">Stay Connected</li>
+                            <div style={{ border: '1px solid #83c3f0' }} class="border-b  border-gray-500 my-2"></div>
+                            <li className="cursor-pointer flex hover:text-[#83c3f0] my-2 gap-3 ">
+                            <div style={{borderRadius: '50px'}} className='bg-white text-center w-full text-black'>
+                            <TiSocialFacebook className='text-xl xl:ml-1' />
+                                </div> 
+                            <h2>Facebook</h2>
+                            </li>
+                            <li className="cursor-pointer flex hover:text-[#83c3f0] my-2 gap-3 ">
+                            <div style={{borderRadius: '50px'}} className='bg-white text-center w-full text-black'>
+                            <TiSocialLinkedin className='text-xl xl:ml-1' />
+                                </div> 
+                            <h2>LinkedIn</h2>
+                            </li>
+                            <li className="cursor-pointer flex hover:text-[#83c3f0] my-2 gap-3 ">
+                            <div style={{borderRadius: '50px'}} className='bg-white text-center w-full text-black'>
+                            <TiSocialInstagram className='text-lg xl:ml-1' />
+                                </div> 
+                            <h2>Instagram</h2>
+                            </li>
+                            <li className="cursor-pointer flex hover:text-[#83c3f0] my-2 gap-3 ">
+                            <div style={{borderRadius: '50px'}} className='bg-white text-center w-full text-black'>
+                            <TiSocialPinterest className='text-lg xl:ml-1' />
+                                </div> 
+                            <h2>Pinterest</h2>
+                            </li>
+                            <li className="cursor-pointer flex hover:text-[#83c3f0] my-2 gap-3 ">
+                            <div style={{borderRadius: '50px'}} className='bg-white text-center w-full text-black'>
+                            <TiSocialYoutube className='text-lg xl:ml-1' />
+                                </div> 
+                            <h2>Youtube</h2>
+                            </li>
                         </ul>
                     </div>
                     {/* search input */}

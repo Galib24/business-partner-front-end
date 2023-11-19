@@ -27,7 +27,7 @@ const Login = () => {
     };
 
     return (
-        <div>
+        <div className='overflow-x-hidden'>
             {/* Title part */}
             <div className='p-24 container mx-auto bg-[#774e88]'>
                 <h2 style={{ fontSize: '26px' }} className='mt-10 ml-20 font-bold text-white'>
@@ -49,9 +49,10 @@ const Login = () => {
             </div>
 
             {/* Form and video player */}
-            <div className='flex flex-col lg:flex-row lg:w-full mt-5 container m-10 p-10 mx-auto '>
-                <div className='lg:w-1/2'>
-                    <div className='px-4'>
+           <div className='container mx-auto'>
+           <div className='flex flex-col xl:flex-row md:flex-row lg:flex-row lg:w-full mt-5 container xl:m-10  mx-auto '>
+                <div className='lg:w-1/2 xl:w-1/2 md:w-6/12  '>
+                    <div className=''>
                         <div className='flex w-full'>
                             <button
                                 style={{ border: '2px solid #774e88', borderRadius: '10px  0 0 10px' }}
@@ -249,7 +250,7 @@ const Login = () => {
                         </div>
                     </div>
                 </div>
-                <div className='lg:w-1/4'>
+                <div className='lg:w-1/4 xl:w-1/4 md:w-5/12 md:ml-5'>
                     <div className='lg:hidden mb-5'>
                         <YouTube videoId='zLCcLmm-0_U' opts={{ ...opts, width: '100%' }} onReady={onReady} />
                     </div>
@@ -260,6 +261,7 @@ const Login = () => {
                     </div>
                 </div>
             </div>
+           </div>
         </div>
     );
 };
