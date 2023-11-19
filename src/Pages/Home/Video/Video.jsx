@@ -1,6 +1,7 @@
 import React from 'react';
 import videoBg from '../../../assets/video/header-video1.mp4';
 import videoBg2 from '../../../assets/video/header-video2.mp4';
+import videoBg3 from '../../../assets/video/header-video3.mp4';
 import './Video.css';
 
 const Video = () => {
@@ -8,6 +9,7 @@ const Video = () => {
     <div className='main max-w-screen-3xl relative'>
       <video className='video' src={videoBg} autoPlay loop muted></video>
       <video className='video2' src={videoBg2} autoPlay loop muted></video>
+      <video className='video3' src={videoBg3} autoPlay loop muted></video>
       <div className='overlay'></div>
       {/* input filed  */}
       <div className='lg:flex lg:items-center lg:justify-center hidden mx-auto'>

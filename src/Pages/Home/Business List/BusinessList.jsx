@@ -612,7 +612,7 @@ const BusinessList = () => {
                                     className="input my-4 w-full"
                                 />
                                 <div style={{ border: '1px solid black' }} className="my-4">
-                                    <select style={{ padding: '8px 6px' }} className="w-full bg-white cursor-pointer text-sm sm:text-base md:text-lg lg:text-xl">
+                                    <select style={{ padding: '8px 6px' }} className="w-full bg-white cursor-pointer ">
                                         <option>Please Select industry</option>
                                         <option>Agriculture/Primary</option>
                                         <option>Engineering</option>

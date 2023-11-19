@@ -62,3 +62,16 @@
 }
 
 
+
+/* Media Query for Medium Devices */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .video {
+      display: none; /* Hide the first video on medium devices */
+  }
+
+  .video3 {
+      display: block; /* Show the second video on medium devices */
+      margin-top: 80px;
+  }
+}
+

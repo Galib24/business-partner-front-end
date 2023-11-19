@@ -9,7 +9,7 @@ const Footer = () => {
             <div className='bg-neutral'>
 
                 {/* second part */}
-                <div className='bg-[#774e88] overflow-hidden'>
+                <div className='bg-[#774e88] overflow-hidden '>
                     <div className='container mx-auto overflow-hidden flex flex-col md:flex-row justify-between bg-[#774e88]  text-white'>
                         <div className='flex justify-center md:justify-start items-center md:items-start px-5 mb-4 md:mb-0'>
                             <h2 className='text-2xl ml-36 mt-12'>Do Business Where Business is Done</h2>
@@ -18,7 +18,7 @@ const Footer = () => {
 
                         <div className="w-1/2 relative right-0 bottom-0  hidden sm:block h-36  py-20   bg-[#b4a5c7] translate-x-4 -skew-x-12 origin-left">
                             <div className='flex absolute right-72 bottom-16   justify-center items-center md:justify-end'>
-                                <button className='p-3 px-10 transform skew-x-12 bg-[#774e88]'>Sell Your Business</button>
+                                <button className='p-3 px-10 transform hidden sm:flex md:hidden lg:block skew-x-12 bg-[#774e88]'>Sell Your Business</button>
                             </div>
                         </div>
 
@@ -33,7 +33,7 @@ const Footer = () => {
 
                 {/* third part */}
                 <footer className="footer p-4 md:p-10 bg-[#291958] text-white container mx-auto flex flex-col justify-between items-center max-h-screen overflow-y-auto">
-                    <div style={{ fontSize: '14px' }} className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 md:gap-10 lg:gap-10">
+                    <div style={{ fontSize: '14px' }} className="flex flex-wrap gap-6 justify-center mt-10 ml-10 mb-14 md:grid md:grid-cols-4 xl:grid-cols-6  xl:gap-16">
                         <ul className="mb-4">
                             <li className=""><Link style={{ fontSize: '14px' }} className="text-white">Company</Link> </li>
                             <div style={{ border: '1px solid #83c3f0' }} class="border-b  border-gray-500 my-2"></div>

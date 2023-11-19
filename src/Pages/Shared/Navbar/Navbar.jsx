@@ -51,7 +51,7 @@ const Navbar = () => {
                             <img  style={{ width: '150px' }}  src={logoImage} alt="" />
                         </Link>
                         <div className='xl:ml-16'>
-                            <ul className="hidden sm:flex  items-center">
+                            <ul className="hidden sm:flex md:flex items-center">
                                 <li>
 
                                     <div className="dropdown   dropdown-bottom dropdown-end">
@@ -122,7 +122,7 @@ const Navbar = () => {
 
                         </div>
 
-                        <div className={scrolled ? "  bg-[#774e88] translate-y-1  translate-x-10 -skew-x-12 origin-left xl:py-4 px-12  ease-in-out transition-all duration-300   " : ''}>
+                        <div className={scrolled ? "  bg-[#774e88] translate-y-1 hidden sm:flex  translate-x-10 -skew-x-12 origin-left xl:py-4 px-12  ease-in-out transition-all duration-300   " : ''}>
 
                             <div style={{ border: '1px solid white' }}  className={`dropdown hidden ${scrolled ? 'transform skew-x-12 bg-[#774e88] text-white ' : 'border-1 border-white text-white'} sm:block hover:bg-[#774e88]   ease-in-out  text-black dropdown-bottom dropdown-end xl:mr-20 transition-all duration-500 `}>
                                 <label tabIndex={0} className="flex  justify-center items-center cursor-pointer hover:text-white   xl:m-1">
