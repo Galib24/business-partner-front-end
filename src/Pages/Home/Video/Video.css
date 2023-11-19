@@ -40,12 +40,12 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .video2 {
+  .video3 {
       display: block; /* Show the second video on small devices */
       margin-top: 80px;
   }
 
-  .video {
+  .video, .video3 {
       display: none; /* Hide the first video on small devices */
   }
 }
@@ -56,7 +56,7 @@
       display: block; /* Show the first video on larger devices */
   }
 
-  .video2 {
+  .video2, .video3 {
       display: none; /* Hide the second video on larger devices */
   }
 }
