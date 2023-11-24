@@ -102,15 +102,8 @@ const Blog = () => {
                             <img src={image6} alt="" />
                         </div>
                         {/* card part */}
-                        <div className='flex w-full h-72 mt-14 gap-4 p-10  bg-[#edf3f8]'>
-                            <img style={{ width: '300px' }} className=' ml-2' src={image7} alt="" />
-                            <div>
-                                <h2 className='text-2xl'>Steven Brodward</h2>
-                                <h2 style={{ fontSize: '14px' }} className='mt-2 mb-2'>Senior Web Designer</h2>
-                                <p style={{ fontSize: '14px' }}>It is a long established fact that a reader will be distracted. Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance, business orci ultrices venenatis maurisIt is a long established fact that a reader will be distracted. Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance, business orci ultrices venenat.</p>
-                            </div>
-                        </div>
-                        <div className='flex w-full h-72 mt-14 gap-4 p-10   bg-[#edf3f8]'>
+                      
+                        <div className='flex w-full xl:h-72 md:h-96  mt-14 gap-4 p-10    bg-[#edf3f8]'>
                             <img className='w-36 h-24 ml-2' src={image7} alt="" />
                             <div>
                                 <h2 className='text-2xl'>Steven Brodward</h2>
@@ -118,7 +111,7 @@ const Blog = () => {
                                 <p style={{ fontSize: '14px' }}>It is a long established fact that a reader will be distracted. Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance, business orci ultrices venenatis maurisIt is a long established fact that a reader will be distracted. Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance, business orci ultrices venenat.</p>
                             </div>
                         </div>
-                        <div className='flex w-full h-72 mt-14 gap-4 p-10   bg-[#edf3f8]'>
+                        <div className='flex w-full xl:h-72 md:h-96  mt-14 gap-4 p-10   bg-[#edf3f8]'>
                             <img className='w-36 h-24 ml-2' src={image7} alt="" />
                             <div>
                                 <h2 className='text-2xl'>Steven Brodward</h2>
@@ -126,7 +119,7 @@ const Blog = () => {
                                 <p style={{ fontSize: '14px' }}>It is a long established fact that a reader will be distracted. Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance, business orci ultrices venenatis maurisIt is a long established fact that a reader will be distracted. Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance, business orci ultrices venenat.</p>
                             </div>
                         </div>
-                        <div className='flex w-full h-72 mt-14 gap-4 p-10   bg-[#edf3f8]'>
+                        <div className='flex w-full xl:h-72 md:h-96 mt-14 gap-4 p-10   bg-[#edf3f8]'>
                             <img className='w-36 h-24 ml-2' src={image7} alt="" />
                             <div>
                                 <h2 className='text-2xl'>Steven Brodward</h2>
@@ -167,14 +160,14 @@ const Blog = () => {
                     {/* Right Part (Image) */}
                     <div className="md:w-1/3 mt-4 md:mt-0">
                         {/* search input */}
-                        <form className="w-full text-black   md:w-full mb-4 md:mb-0 lg:mx-auto md:ml-44">
+                        <form className="w-full text-black   md:w-full mb-4 md:mb-0 lg:mx-auto  xl:ml-44">
                             <fieldset className="form-control   container">
                                 <div className="relative">
                                     <input
                                         style={{ border: '1px solid black' }}
                                         type="text"
                                         placeholder="Search Here"
-                                        className="input input-bordered   md:w-96 pr-16"
+                                        className="input input-bordered   md:w-9/12 xl:w-full xl:pr-16"
                                     />
                                     <button className="btn bg-white text-2xl absolute top-0 sm:right-20 md:right-3 rounded-l-none"><IoMdSearch></IoMdSearch> </button>
                                 </div>
@@ -263,21 +256,35 @@ const Blog = () => {
                             {/* popular tag */}
                             <div className='mt-5'>
                                 <h2 className='text-3xl mb-2'>Popular Tags</h2>
-                                <div className='flex gap-1'>
-                                    <button className='btn bg-white'>Blog</button>
+                                <div className='flex gap-1 xl:flex-row'>
+                                   
+                                  <div className='flex-row xl:flex-row md:flex-col'>
+                                  <div>
+                                  <button className='btn bg-white'>Blog</button>
                                     <button className='btn bg-white'>Construction</button>
+                                  </div>
+                                  
                                     <button className='btn bg-white'>Wordpress Themes</button>
+                                  </div>
                                 </div>
-                                <div className='flex gap-1'>
+                                <div className='flex-row xl:flex-row md:flex-col gap-1'>
+                                    <div>
                                     <button className='btn bg-white'>Indusrty</button>
                                     <button className='btn bg-white'>Gas</button>
+                                    </div>
+                                    <div>
                                     <button className='btn bg-white'>Power</button>
                                     <button className='btn bg-white'>Transport</button>
+                                    </div>
                                 </div>
-                                <div className='flex gap-1'>
+                                <div className='flex  gap-1'>
+                                   <div className='flex-row xl:flex-row md:flex-col'>
+                                   <div>
                                     <button className='btn bg-white'>Blog</button>
                                     <button className='btn bg-white'>Construction</button>
+                                    </div>
                                     <button className='btn bg-white'>Wordpress Themes</button>
+                                   </div>
                                 </div>
                             </div>
                         </div>

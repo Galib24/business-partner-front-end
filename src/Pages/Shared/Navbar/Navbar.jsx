@@ -46,12 +46,12 @@ const Navbar = () => {
                     className="xl:py-2 navbar mx-auto max-w-screen-3xl">
                     {/* Desktop part */}
                     <div
-                        className="lg:flex lg:ml-36 items-center justify-between  h-full lg:px-4  w-full">
+                        className="lg:flex lg:ml-36 md:ml-0 sm:ml-0 lg:items-center lg:justify-between  h-full lg:px-4  w-full">
                         <Link className="hidden lg:flex">
                             <img  style={{ width: '150px' }}  src={logoImage} alt="" />
                         </Link>
-                        <div className='xl:ml-16'>
-                            <ul className="hidden sm:flex md:flex items-center">
+                        <div className='xl:ml-16 '>
+                            <ul className="hidden md:hidden lg:flex  items-center">
                                 <li>
 
                                     <div className="dropdown   dropdown-bottom dropdown-end">
@@ -92,7 +92,7 @@ const Navbar = () => {
                                         <label tabIndex={0} className="flex justify-center items-center cursor-pointer">Business Brokers<MdOutlineKeyboardArrowDown className='mr-2 ml-1'></MdOutlineKeyboardArrowDown> </label>
 
                                         <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                                            <li><Link>Brokers Directory</Link></li>
+                                            <li><Link className='text-black'>Brokers Directory</Link></li>
                                             <li>
                                                 <Link to={'/login'} className='text-black'><a>Business sales Promo</a></Link>
                                             </li>
@@ -122,7 +122,7 @@ const Navbar = () => {
 
                         </div>
 
-                        <div className={scrolled ? "  bg-[#774e88] translate-y-1 hidden sm:flex  translate-x-10 -skew-x-12 origin-left xl:py-4 px-12  ease-in-out transition-all duration-300   " : ''}>
+                        <div className={`hidden md:hidden lg:flex ${scrolled ? "  bg-[#774e88] translate-y-1 hidden sm:flex  translate-x-10 -skew-x-12 origin-left xl:py-4 px-12  ease-in-out transition-all duration-300   " : ''}`}>
 
                             <div style={{ border: '1px solid white' }}  className={`dropdown hidden ${scrolled ? 'transform skew-x-12 bg-[#774e88] text-white ' : 'border-1 border-white text-white'} sm:block hover:bg-[#774e88]   ease-in-out  text-black dropdown-bottom dropdown-end xl:mr-20 transition-all duration-500 `}>
                                 <label tabIndex={0} className="flex  justify-center items-center cursor-pointer hover:text-white   xl:m-1">
@@ -172,10 +172,10 @@ const Navbar = () => {
 
                         {/* sm */}
                         <div
-                            className="sm:hidden  cursor-pointer grid grid-cols-12 gap-5 items-center">
+                            className="lg:hidden  md:flex md:justify-between  cursor-pointer  grid grid-cols-12 gap-5 w-full  items-center">
                             <div
                                 onClick={toggleMenu}
-                                className="flex items-starts justify-center col-span-2">
+                                className="flex items-starts justify-center col-span-2 md:ml-6">
                                 {/* <HiMenuAlt2 className="w-9 h-9 text-black ms-1" /> */}
                                 <img src={imageToShow} alt="" />
                             </div>
@@ -184,10 +184,10 @@ const Navbar = () => {
                             >
                                 <img style={{ width: '150px' }} src={img1} alt="" />
                             </Link>
-                            <div style={{ border: '1px solid black' }} className="dropdown  col-span-5  hover:bg-[#774e88]  duration-300 ease-in-out  text-black dropdown-bottom dropdown-end">
-                                <label tabIndex={0} className="flex  justify-center items-center cursor-pointer hover:text-white">
+                            <div style={{ border: '1px solid black' }} className="dropdown mr-3  col-span-5  bg-[#774e88]  duration-300 ease-in-out  text-white dropdown-bottom dropdown-end">
+                                <label tabIndex={0} className="flex  justify-center items-center cursor-pointer text-white">
                                     <img width={18} className='mr-1' src={img2} alt="" />
-                                    My Business  <MdOutlineKeyboardArrowDown></MdOutlineKeyboardArrowDown></label>
+                                    My Business  <MdOutlineKeyboardArrowDown className='text-white'></MdOutlineKeyboardArrowDown></label>
 
                                 <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-44">
                                     <li>
@@ -223,7 +223,7 @@ const Navbar = () => {
 
                     {/* dashboard for small device interface */}
                     <div
-                        className={`fixed top-20 left-0 w-[60%] sm:hidden h-screen bg-[#774e88] p-10  transition-transform duration-500 ease-in-out ${menuOpen ? 'transform translate-x-0' : 'transform -translate-x-full'
+                        className={`fixed top-20 left-0 w-[60%] md:w-[30%] lg:hidden  h-screen bg-[#774e88] p-10  transition-transform duration-500 ease-in-out ${menuOpen ? 'transform translate-x-0' : 'transform -translate-x-full'
                             }`}
                     >
                         {/* cross sine */}
@@ -249,96 +249,96 @@ const Navbar = () => {
 
                         {/* mobile device menu */}
                         <div
-                            className="flex-col  font-semibold bg-[#774e88]  text-white">
-                            <ul className='absolute top-4 left-4'>
+                            className="flex-col   font-semibold bg-[#774e88]  text-white">
+                            <ul className='absolute flex flex-col gap-1  top-4 left-4'>
                                 <li
                                     className="hover:underline">
                                     <Link
                                     >
                                         Post a Free Ad
                                     </Link>
-                                    <hr style={{ border: '1px solid black', marginTop: '6px' }} className='w-52' />
+                                    <hr style={{ border: '.5px solid white', marginTop: '6px' }} className='w-40 my-1' />
                                 </li>
                                 <li
                                     className="hover:underline">
                                     <div className='flex'>
-                                        <div className='flex'>
+                                        <div className='flex items-center'>
                                             <Link
                                             >
                                                 Buy a Business
                                             </Link>
-                                            <MdOutlineKeyboardArrowDown className='mt-1'></MdOutlineKeyboardArrowDown>
+                                            <MdOutlineKeyboardArrowDown className='mt-1 ml-1'></MdOutlineKeyboardArrowDown>
                                         </div>
                                     </div>
-                                    <hr style={{ border: '1px solid black', marginTop: '6px' }} className='w-52' />
+                                    <hr style={{ border: '.5px solid white', marginTop: '6px' }} className='w-40 my-1' />
                                 </li>
                                 <li
                                     className="hover:underline">
-                                    <div className='flex'>
+                                    <div className='flex items-center'>
                                         <Link
                                         >
                                             Buy a Franchise
                                         </Link>
-                                        <MdOutlineKeyboardArrowDown className='mt-1'></MdOutlineKeyboardArrowDown>
+                                        <MdOutlineKeyboardArrowDown className='mt-1 ml-1'></MdOutlineKeyboardArrowDown>
                                     </div>
-                                    <hr style={{ border: '1px solid black', marginTop: '6px' }} className='w-52' />
+                                    <hr style={{ border: '.5px solid white', marginTop: '6px' }} className='w-40 my-1' />
                                 </li>
                                 <li
                                     className="hover:underline">
-                                    <div className='flex'>
+                                    <div className='flex items-center'>
                                         <Link
                                         >
                                             Sell a Business
                                         </Link>
-                                        <MdOutlineKeyboardArrowDown className='mt-1'></MdOutlineKeyboardArrowDown>
+                                        <MdOutlineKeyboardArrowDown className='mt-1 ml-1 '></MdOutlineKeyboardArrowDown>
                                     </div>
-                                    <hr style={{ border: '1px solid black', marginTop: '6px' }} className='w-52' />
+                                    <hr style={{ border: '.5px solid white', marginTop: '6px' }} className='w-40 my-1' />
                                 </li>
                                 <li
                                     className="hover:underline">
-                                    <div className='flex'>
+                                    <div className='flex items-center'>
                                         <Link
                                         >
                                             Business Broker
                                         </Link>
-                                        <MdOutlineKeyboardArrowDown className='mt-1'></MdOutlineKeyboardArrowDown>
+                                        <MdOutlineKeyboardArrowDown className='mt-1 ml-1'></MdOutlineKeyboardArrowDown>
                                     </div>
-                                    <hr style={{ border: '1px solid black', marginTop: '6px' }} className='w-52' />
+                                    <hr style={{ border: '.5px solid white', marginTop: '6px' }} className='w-40 my-1' />
                                 </li>
                                 <li
                                     className="hover:underline">
-                                    <div className='flex'>
+                                    <div className='flex items-center'>
                                         <Link
                                         >
                                             Franchisors
                                         </Link>
-                                        <MdOutlineKeyboardArrowDown className='mt-1'></MdOutlineKeyboardArrowDown>
+                                        <MdOutlineKeyboardArrowDown className='mt-1 ml-1'></MdOutlineKeyboardArrowDown>
                                     </div>
-                                    <hr style={{ border: '1px solid black', marginTop: '6px' }} className='w-52' />
+                                    <hr style={{ border: '.5px solid white', marginTop: '6px' }} className='w-40 my-1' />
                                 </li>
                                 <li
                                     className="hover:underline">
                                     <Link
-                                    >
+                                    className='text-white'>
                                         Business Wanted
                                     </Link>
-                                    <hr style={{ border: '1px solid black', marginTop: '6px' }} className='w-52' />
+                                    <hr style={{ border: '.5px solid white', marginTop: '6px' }} className='w-40 my-1' />
                                 </li>
                                 <li
                                     className="hover:underline">
                                     <Link
-                                    >
+                                    className='text-white'>
                                         Login/Register
                                     </Link>
-                                    <hr style={{ border: '1px solid black', marginTop: '6px' }} className='w-52' />
+                                    <hr style={{ border: '.5px solid white', marginTop: '6px' }} className='w-40 my-1' />
                                 </li>
                                 <li
                                     className="hover:underline">
                                     <Link
-                                    >
+                                    className='text-white'>
                                         Logout
                                     </Link>
-                                    <hr style={{ border: '1px solid black', marginTop: '6px' }} className='w-52' />
+                                    <hr style={{ border: '.5px solid white', marginTop: '6px' }} className='w-40 my-1' />
                                 </li>
 
                             </ul>

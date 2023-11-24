@@ -574,8 +574,8 @@ const BusinessList = () => {
                                     key={page}
                                     onClick={() => handlePageChange(page)}
                                     className={`cursor-pointer mx-1 px-3 py-2 border rounded ${currentPage === page
-                                            ? 'bg-blue-500 text-white'
-                                            : 'border-gray-300 hover:bg-gray-200'
+                                        ? 'bg-blue-500 text-white'
+                                        : 'border-gray-300 hover:bg-gray-200'
                                         }`}
                                 >
                                     {page}
@@ -625,29 +625,8 @@ const BusinessList = () => {
 
                                 </div>
 
-                          {/* Second Part */}
-<div className='bg-[#774e88] overflow-hidden'>
-    <div className='container mx-auto overflow-hidden flex flex-col md:flex-row justify-between bg-[#774e88] text-white px-5'>
-        <div className='flex justify-center md:justify-start items-center md:items-start px-5 md:px-0 mb-4 md:mb-0'>
-            <h2 className='text-2xl mt-12'>Do Business Where Business is Done</h2>
-        </div>
 
-        {/* Button Section */}
-        <div className="w-full md:w-1/2 relative right-0 bottom-0 hidden sm:block h-36 py-20 bg-[#b4a5c7] translate-x-4 -skew-x-12 origin-left">
-            <div className='flex absolute right-72 bottom-16 justify-center items-center md:justify-end'>
-                <button className='p-3 px-10 transform skew-x-12 bg-[#774e88] z-10'>Sell Your Business</button>
-            </div>
-        </div>
-
-        {/* Video Overlay for Medium Devices */}
-        <div className="md:hidden w-full relative right-0 bottom-0 h-36 py-20 bg-[#b4a5c7] translate-x-4 -skew-x-12 origin-left">
-            <div className='flex absolute right-72 bottom-16 justify-center items-center'>
-                <button className='p-3 px-10 transform skew-x-12 bg-[#774e88]'>Sell Your Business</button>
-            </div>
-        </div>
-    </div>
-</div>
-      <div style={{ border: '1px solid black' }} className="my-4">
+                                <div style={{ border: '1px solid black' }} className="my-4">
                                     <select style={{ padding: '10px 8px' }} className="w-full bg-white cursor-pointer">
                                         <option>Please Select industry</option>
                                         <option>Agriculture/Primary</option>
