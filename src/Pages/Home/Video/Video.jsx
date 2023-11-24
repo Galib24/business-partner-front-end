@@ -13,7 +13,7 @@ const Video = () => {
       <div className='overlay'></div>
 
 
-      <div className="lg:hidden w-full absolute bottom-20 left-3 md:bottom-32 md:left-56">
+      <div className="lg:hidden w-full absolute bottom-16 left-3 md:bottom-32 md:left-56">
         <h2 className='md:text-white ml-3 text-xl text-white mb-3 md:ml-7 md:mb-4 font-semibold'>Find Business Opportunities for Sale</h2>
         <div className='md:text-center md:w-5/12 w-11/12 text-center  rounded-md h-10 text-white bg-[#774e88]'>
           <h2>Search</h2>

@@ -189,7 +189,7 @@ const Navbar = () => {
                                     <img width={18} className='mr-1' src={img2} alt="" />
                                     My Business  <MdOutlineKeyboardArrowDown className='text-white'></MdOutlineKeyboardArrowDown></label>
 
-                                <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-44">
+                                <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-44 text-black">
                                     <li>
                                         <div className='flex'>
                                             <img width={16} src={img4} alt="" />
