@@ -175,7 +175,7 @@ const Navbar = () => {
                             className="lg:hidden  md:flex md:justify-between  cursor-pointer  grid grid-cols-12 gap-5 w-full  items-center">
                             <div
                                 onClick={toggleMenu}
-                                className="flex items-starts justify-center col-span-2 md:ml-6">
+                                className="flex items-starts justify-center col-span-2">
                                 {/* <HiMenuAlt2 className="w-9 h-9 text-black ms-1" /> */}
                                 <img src={imageToShow} alt="" />
                             </div>
@@ -223,7 +223,7 @@ const Navbar = () => {
 
                     {/* dashboard for small device interface */}
                     <div
-                        className={`fixed top-20 left-0 w-[60%] md:w-[30%] lg:hidden  h-screen bg-[#774e88] p-10  transition-transform duration-500 ease-in-out ${menuOpen ? 'transform translate-x-0' : 'transform -translate-x-full'
+                        className={`fixed top-20 left-0 w-[50%] md:w-[30%] lg:hidden  h-screen bg-[#774e88] p-10  transition-transform duration-500 ease-in-out ${menuOpen ? 'transform translate-x-0' : 'transform -translate-x-full'
                             }`}
                     >
                         {/* cross sine */}
