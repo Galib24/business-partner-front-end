@@ -2,6 +2,7 @@ import React from 'react';
 import image from '../../../assets/images/about-us-img.png';
 
 const FirstSection = () => {
+  
   return (
     <>
       <div className='container bg-white mx-auto'>

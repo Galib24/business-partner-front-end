@@ -3,6 +3,12 @@ import { GoDotFill } from "react-icons/go";
 import { FaCheck } from "react-icons/fa6";
 import './Pricing.css'
 const Pricing = () => {
+    useEffect(() => {
+        const scrollToTop = () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+        scrollToTop();
+      }, []);
     const [activeTab, setActiveTab] = useState('overview');
     const [Monthly, setMonthly] = useState('overview'); // Set initial state to null
     const [Annually, setAnnually] = useState('Annually');

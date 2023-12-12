@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import img1 from '../../../assets/images/recaptcha.png'
 
 import { LuMail } from "react-icons/lu";
 
 
 const Bonus = () => {
+    useEffect(() => {
+        const scrollToTop = () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+        scrollToTop();
+      }, []);
     return (
         <div className=" ">
             {/* <NavTwo></NavTwo> */}

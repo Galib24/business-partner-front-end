@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import image from '../../../assets/images/latest_news_page_1.jpg'
 import image2 from '../../../assets/images/latest_news_small_1.jpg'
 import image3 from '../../../assets/images/latest_news_small_2.jpg'
@@ -13,6 +13,12 @@ import { FaArrowRight } from 'react-icons/fa';
 
 // IoMdSearch
 const Blog = () => {
+    useEffect(() => {
+        const scrollToTop = () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+        scrollToTop();
+      }, []);
     return (
         <>
             <div className='p-24  container  mx-auto   bg-[#774e88]'>

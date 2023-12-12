@@ -1,7 +1,16 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Faq = () => {
+    useEffect(() => {
+        const scrollToTop = () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+        scrollToTop();
+      }, []);
+
+
+
     const [isDropdownVisible, setDropdownVisibility] = useState(false);
     const [Visible, setVisibility] = useState(false);
     const [Interest, setInterest] = useState(false);

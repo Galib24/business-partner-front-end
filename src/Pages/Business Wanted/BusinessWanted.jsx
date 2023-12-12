@@ -1,8 +1,14 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import img1 from '../../assets/images/bp-img (2).png'
 import img2 from '../../assets/images/300x250.png'
 import './BusinessWanted.css'
 const BusinessWanted = () => {
+    useEffect(() => {
+        const scrollToTop = () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+        scrollToTop();
+      }, []);
 
 
     // pagination

@@ -14,6 +14,12 @@ import img4 from '../../../assets/images/result-page-img.jpg'
 import img5 from '../../../assets/images/baner.jpg'
 
 const BusinessList = () => {
+    useEffect(() => {
+        const scrollToTop = () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+        scrollToTop();
+      }, []);
     const [minValue, setMinValue] = useState(0);
     const [maxValue, setMaxValue] = useState(100);
 
